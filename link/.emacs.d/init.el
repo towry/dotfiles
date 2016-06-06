@@ -55,10 +55,13 @@
 (require 'init-osx-keys)
 (require 'init-windows)
 (require 'init-mmm)
+(require 'init-sessions)
+(require 'init-org)
 
 (require 'init-flycheck)
 (require 'init-javascript)
 (require 'init-css)
+(require 'init-markdown)
 
 ; fill column indictor
 (require 'init-fci)

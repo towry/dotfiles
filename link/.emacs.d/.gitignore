@@ -4,3 +4,6 @@ auto-save-list/
 elpa/
 custom.el~
 custom.el
+.emacs.desktop
+*.jar
+history
