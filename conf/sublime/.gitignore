@@ -1,8 +1,10 @@
-Package\ Control.last-run
-Package\ Control.ca-list
-Package\ Control.ca-bundle
-Package\ Control.merged-ca-bundle
-Package\ Control.system-ca-bundle
-Package\ Control.cache/
-Package\ Control.ca-certs/
+User/Package\ Control.last-run
+User/Package\ Control.ca-list
+User/Package\ Control.ca-bundle
+User/Package\ Control.merged-ca-bundle
+User/Package\ Control.system-ca-bundle
+User/Package\ Control.cache/
+User/Package\ Control.ca-certs/
 *_cache.json
+User/Color\ Highlighter/themes/
+User/c2u_tmp/
