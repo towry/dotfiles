@@ -1,0 +1,18 @@
+dotfiles
+~~~~~~~~
+
+towry's dotfiles.
+
+* source - some config to append to zshrc
+* link - some config to link to home.
+* copy - some config to copy to home.
+* conf - some configurations.
+* backup - unknow.
+* cache - unknow.
+* init - unknow.
+* test - unknow.
+* vendor - unknow.
+
+
+------------------------
+Tue Jun  7 00:29:59 2016
