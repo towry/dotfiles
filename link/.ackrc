@@ -1,0 +1,6 @@
+--type-add
+js=.jsx
+--type-add
+css=.sass,.lss,.scss
+--type-set
+slim=.slim

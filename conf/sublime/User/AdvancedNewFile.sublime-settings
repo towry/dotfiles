@@ -1,0 +1,7 @@
+{
+  "default_root": "project_folder",
+  "ignore_case": true,
+  "auto_refresh_sidebar": true,
+  "completion_type": "nix",
+  "cursor_before_extension": true
+}

@@ -1,0 +1,55 @@
+#!/usr/bin/bash
+
+# Quick set terminal title
+function _title {
+	printf "\033]0;%s\007" "$1"
+}
+
+# Git
+export PATH=/usr/local/git/bin:/usr/local/sbin:$PATH
+
+function xtree() {
+  find . -print | grep -v .git | sed -e 's;[^/]*/;|____;g;s;____|; |;g' | less
+}
+
+function xbn() {
+  git branch | sed -n -e 's/^\* \(.*\)/\1/p'
+}
+
+function xpush() {
+  local a=$1 
+  if [ -z "$1" ]
+  then 
+    a='origin'
+  fi
+  echo "git push -u $a `xbn`"
+  sleep 1
+  git push -u $a `xbn`
+}
+
+function xpull() {
+  local a=$1
+  if [ -z "$1" ]
+  then
+	a='origin'
+  fi
+  echo "git pull $a `xbn`"
+  sleep 1
+  git pull $a `xbn`
+}
+
+function xpr() {
+  local a=$1
+  if [ -z "$1" ]
+  then
+	a='origin'
+  fi
+  echo "git pull --rebase $a `xbn`"
+  sleep 1
+  git pull --rebase $a `xbn`
+}
+
+function xgedit() {
+  subl `echo $1 | awk '{print $NF}'`
+}
+

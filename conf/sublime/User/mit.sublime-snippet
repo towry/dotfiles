@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+/*!
+	MIT License http://github.com/towry/LICENSE/wiki/mit-license
+	Author Towry Wang @tovvry
+*/
+
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>mit</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.c++, source.js, source.c, source.php</scope>
+</snippet>

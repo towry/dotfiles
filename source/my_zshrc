@@ -1,0 +1,61 @@
+#!/usr/bin/bash
+
+# Alias
+alias cls="clear"
+alias pyact="pyenv activate"
+alias pydeact="pyenv deactivate"
+alias n="gnvim"
+alias s="subl"
+alias vi="nvim"
+alias gtail="git rev-list --all | tail"
+alias xmerge="git merge --no-ff"
+alias car="cargo"
+alias sshwanglt="ssh wanglt@www.dqprism.com"
+alias sshtowry="ssh wanglt@towry.dqprism.com"
+alias sshstatic="ssh chend@static.moseeker.com"
+
+# >>> Version managers           
+
+# PYENV
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Users/towry/.multirust/toolchains/stable/cargo/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
+
+if [[ -d $HOME/.pyenv ]];then
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
+fi
+
+# NVM
+export NVM_DIR="/Users/towry/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# <<<<
+
+# >>> source
+source ~/.dotfiles/source/shutils
+# <<<
+
+# >>> Exports
+PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
+export PATH
+# <<<
+
+# eval "$(docker-machine env default)"
+
+[[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
+
+source ~/.gvm/scripts/gvm
+export GOPATH=/Users/towry/dev/goenv
+PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
+export PYTHONPATH
+
+# code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export VISUAL=nvim
+export EDITOR="$VISUAL"

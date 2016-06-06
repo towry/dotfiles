@@ -1,0 +1,38 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"All Autocomplete",
+		"Better CoffeeScript",
+		"Cheat Sheets",
+		"Codecs33",
+		"Color Highlighter",
+		"ConvertToUTF8",
+		"EditorConfig",
+		"ExtendedTabSwitcher",
+		"Git",
+		"GitGutter",
+		"Gruvbox Dark",
+		"HTML-CSS-JS Prettify",
+		"InsertDate",
+		"Jade",
+		"Licence Snippets",
+		"NASM x86 Assembly",
+		"Package Control",
+		"Pretty JSON",
+		"Ruby Slim",
+		"Rust",
+		"Sass",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-json",
+		"SublimeLinter-pyflakes",
+		"Swift",
+		"TOML",
+		"Tornado"
+	]
+}

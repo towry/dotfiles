@@ -1,0 +1,42 @@
+{
+  "rules": {
+    "no-console": 0,
+    "space-before-function-paren": 0,
+    "comma-dangle": 0,
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "no-unused-vars": [2, 
+      {
+      "args": "after-used", 
+      "argsIgnorePattern": "^React|angular",
+      "vars": "all",
+      "varsIgnorePattern": "^React|angular"
+      }
+    ]
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "amd": true,
+    "mocha": true,
+    "jasmine": true
+  },
+  "extends": "eslint:recommended",
+  "ecmaFeatures": {
+    "jsx": true,
+    "experimentalObjectRestSpread": true,
+    "modules": true
+  },
+  "globals": {
+    "react": true,
+    "React": true,
+    "jquery": true,
+    "$": true,
+    "angular": true,
+    "d3": true,
+	"Vue": true
+  }
+}
