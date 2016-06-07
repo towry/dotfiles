@@ -1,3 +1,7 @@
+;;----------------------------------------------------------------------------
+;; JavaScript
+;;----------------------------------------------------------------------------
+
 (maybe-require-package 'json-mode)
 (maybe-require-package 'js2-mode)
 ; (maybe-require-package 'coffee-mode)
@@ -95,4 +99,73 @@
               (lambda () (inferior-js-keys-mode -1)))))
 
 
-(provide 'init-javascript)
+
+;;----------------------------------------------------------------------------
+;; CSS
+;;----------------------------------------------------------------------------
+;;; Colourise CSS colour literals
+(when (maybe-require-package 'rainbow-mode)
+  (dolist (hook '(css-mode-hook html-mode-hook sass-mode-hook))
+    (add-hook hook 'rainbow-mode)))
+
+;;; Embedding in html
+(require-package 'mmm-mode)
+(after-load 'mmm-vars
+  (mmm-add-group
+   'html-css
+   '((css-cdata
+      :submode css-mode
+      :face mmm-code-submode-face
+      :front "<style[^>]*>[ \t\n]*\\(//\\)?<!\\[CDATA\\[[ \t]*\n?"
+      :back "[ \t]*\\(//\\)?]]>[ \t\n]*</style>"
+      :insert ((?j js-tag nil @ "<style type=\"text/css\">"
+                   @ "\n" _ "\n" @ "</style>" @)))
+     (css
+      :submode css-mode
+      :face mmm-code-submode-face
+      :front "<style[^>]*>[ \t]*\n?"
+      :back "[ \t]*</style>"
+      :insert ((?j js-tag nil @ "<style type=\"text/css\">"
+                   @ "\n" _ "\n" @ "</style>" @)))
+     (css-inline
+      :submode css-mode
+      :face mmm-code-submode-face
+      :front "style=\""
+      :back "\"")))
+  (dolist (mode (list 'html-mode 'nxml-mode))
+    (mmm-add-mode-ext-class mode "\\.r?html\\(\\.erb\\)?\\'" 'html-css)))
+
+
+;;; SASS and SCSS
+(require-package 'sass-mode)
+(require-package 'scss-mode)
+(setq-default scss-compile-at-save nil)
+
+
+;;; LESS
+; (require-package 'less-css-mode)
+; (when (featurep 'js2-mode)
+  ; (require-package 'skewer-less))
+
+
+;;; Use eldoc for syntax hints
+(require-package 'css-eldoc)
+(autoload 'turn-on-css-eldoc "css-eldoc")
+(add-hook 'css-mode-hook 'turn-on-css-eldoc)
+
+
+;;----------------------------------------------------------------------------
+;; Markdown
+;;----------------------------------------------------------------------------
+(when (maybe-require-package 'markdown-mode)
+  (after-load 'whitespace-cleanup-mode
+    (push 'markdown-mode whitespace-cleanup-mode-ignore-modes)))
+
+;;----------------------------------------------------------------------------
+;; Rust
+;;----------------------------------------------------------------------------
+(require-package 'rust-mode)
+(add-to-list 'auto-mode-alist '("\\.rs\\'" . rust-mode))
+
+
+(provide 'init-syntax-support)

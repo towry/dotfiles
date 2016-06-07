@@ -10,11 +10,8 @@
   (add-hook hook 'goto-address-prog-mode))
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 (setq goto-address-mail-face 'link)
-
 (setq-default regex-tool-backend 'perl)
-
 (add-auto-mode 'conf-mode "Procfile")
-
 
 ;;; Whitespace
 
@@ -41,5 +38,37 @@
 
 (global-set-key [remap just-one-space] 'cycle-spacing)
 
+;; default prefer tabs
+(setq-default indent-tabs-mode t)
+;; tab size
+(setq-default tab-width 4)
+;; line number
+(global-linum-mode t)
+
+;; backup files
+(setq version-control t
+  kept-new-versions 5
+  kept-old-versions 0
+  delete-old-versions t 
+  backup-by-copying t)
+(setq vc-make-backup-files nil)
+;; Default and per-save backups go here
+(setq backup-directory-alist `(("." . "~/.emacs.d/backup/per-save/")))
+(setq auto-save-file-name-transforms
+  `((".*" ,"~/.emacs.d/backup/autosave/" t)))
+(defun force-backup-of-buffer ()
+  ;; Make a special "per session" backup at the first save of each
+  ;; emacs session.
+  (when (not buffer-backed-up)
+    ;; Override the default parameters for per-session backups.
+    (let ((backup-directory-alist '((".*" . ,"~/.emacs.d/backup/per-session/")))
+          (kept-new-versions 3))
+      (backup-buffer)))
+  ;; Make a "per save" backup on each save.  The first save results in
+  ;; both a per-session and a per-save backup, to keep the numbering
+  ;; of per-save backups consistent.
+  (let ((buffer-backed-up nil))
+    (backup-buffer)))
+(add-hook 'before-save-hook  'force-backup-of-buffer)
 
 (provide 'init-misc)

@@ -10,3 +10,7 @@ history
 .session
 .emacs.desktop.lock
 org-clock-save.el
+backup/
+!backup/per-session/.gitkeep
+!backup/per-save/.gitkeep
+!backup/autosave/.gitkeep

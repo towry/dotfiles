@@ -3,7 +3,7 @@
 (require-package 'git-blame)
 (require-package 'gitignore-mode)
 (require-package 'gitconfig-mode)
-;; (require-package 'git-gutter)
+(require-package 'git-gutter-fringe)
 (require-package 'git-messenger) ;; Though see also vc-annotate's "n" & "p" bindings
 (require-package 'git-timemachine)
 
@@ -12,11 +12,6 @@
 
 ;; Convenient binding for vc-git-grep
 (global-set-key (kbd "C-x v f") 'vc-git-grep)
-
-; git gutter
-(global-git-gutter-mode t)
-(git-gutter:linum-setup)
-(custom-set-variables
-  '(git-gutter:update-interval 2))
+(require 'git-gutter-fringe)
 
 (provide 'init-git)
