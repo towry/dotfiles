@@ -56,8 +56,11 @@
 (require 'init-windows)
 (require 'init-mmm)
 (require 'init-sessions)
+(require 'init-format)
 (require 'init-org)
+(require 'init-git)
 
+;; syntax
 (require 'init-flycheck)
 (require 'init-javascript)
 (require 'init-css)

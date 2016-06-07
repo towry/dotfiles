@@ -7,3 +7,6 @@ custom.el
 .emacs.desktop
 *.jar
 history
+.session
+.emacs.desktop.lock
+org-clock-save.el
