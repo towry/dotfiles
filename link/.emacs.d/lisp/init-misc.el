@@ -71,4 +71,10 @@
     (backup-buffer)))
 (add-hook 'before-save-hook  'force-backup-of-buffer)
 
+
+;; auto complete
+(require-package 'auto-complete)
+(ac-config-default)
+
+
 (provide 'init-misc)

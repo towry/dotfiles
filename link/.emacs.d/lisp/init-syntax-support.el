@@ -27,7 +27,7 @@
 ;; js2-mode
 
 ;; Change some defaults: customize them to override
-(setq-default js2-basic-offset 2
+(setq-default js2-basic-offset 4
               js2-bounce-indent-p nil)
 (after-load 'js2-mode
   ;; Disable js2 mode's syntax error highlighting by default...
@@ -48,6 +48,7 @@
 
 ;; js-mode
 (setq-default js-indent-level preferred-javascript-indent-level)
+(setq js-indent-level 4)
 
 
 (add-to-list 'interpreter-mode-alist (cons "node" preferred-javascript-mode))
