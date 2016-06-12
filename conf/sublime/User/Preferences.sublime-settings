@@ -35,8 +35,6 @@
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
-		"Jade",
-		"Vintage"
 	],
 	"index_exclude_patterns":
 	[
