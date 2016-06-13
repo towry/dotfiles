@@ -23,11 +23,6 @@ PATH="/Users/towry/.multirust/toolchains/stable/cargo/bin:/Library/Frameworks/Py
 export PATH
 export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 
-if [[ -d $HOME/.pyenv ]];then
-	eval "$(pyenv init -)"
-	eval "$(pyenv virtualenv-init -)"
-fi
-
 # NVM
 export NVM_DIR="/Users/towry/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
