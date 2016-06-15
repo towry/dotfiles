@@ -14,3 +14,4 @@ backup/
 !backup/per-session/.gitkeep
 !backup/per-save/.gitkeep
 !backup/autosave/.gitkeep
+ac-comphist.dat
