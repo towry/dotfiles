@@ -39,7 +39,7 @@ function! NVimrcLoadPlugins()
   " let g:NERDTreeIgnore = ['\.pyc$']
 
   " === CtrlP
-  Plug 'kien/ctrlp.vim'
+  Plug 'ctrlpvim/ctrlp.vim'
   let g:ctrlp_map = ';p'
   let g:ctrl_cmd = ';p'
   if !g:is_windows
