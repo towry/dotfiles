@@ -7,7 +7,6 @@
 	[
 		"AdvancedNewFile",
 		"All Autocomplete",
-		"Better CoffeeScript",
 		"Cheat Sheets",
 		"Codecs33",
 		"Color Highlighter",
@@ -20,7 +19,6 @@
 		"Gruvbox Dark",
 		"HTML-CSS-JS Prettify",
 		"InsertDate",
-		"Jade",
 		"Licence Snippets",
 		"NASM x86 Assembly",
 		"Package Control",
@@ -33,7 +31,6 @@
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
 		"Swift",
-		"TOML",
-		"Tornado"
+		"TOML"
 	]
 }
