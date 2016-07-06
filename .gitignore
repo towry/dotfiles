@@ -1,3 +1,5 @@
 cache/
 backup/
 ac-comphist.dat
+.netrwhist
+link/.config/configstore/

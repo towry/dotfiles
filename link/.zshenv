@@ -14,3 +14,7 @@ if [[ -d $HOME/.pyenv ]];then
 	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
 fi
+
+if which swiftenv > /dev/null;then
+	eval "$(swiftenv init -)"; 
+fi
