@@ -33,6 +33,7 @@ function! NVimrcLoadPlugins()
   " Plug 'tpope/vim-vinegar'
   Plug 'jeetsukumaran/vim-filebeagle'
   Plug 'vim-scripts/SearchComplete'
+  Plug 'toyamarinyon/vim-swift'
 
   " === NERDTree
   " Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
