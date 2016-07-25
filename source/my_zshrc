@@ -13,7 +13,7 @@ alias car="cargo"
 alias sshwanglt="ssh wanglt@devold.dqprism.com"
 alias sshtowry="ssh towry@towry.dqprism.com"
 alias sshstatic="ssh chend@static.moseeker.com"
-alias rm="del"
+# alias rm="del"
 
 # >>> Version managers           
 

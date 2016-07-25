@@ -1,0 +1,27 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+// editor config
+    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 13,
+    "editor.insertSpaces": false,
+    "editor.rulers": [80],
+    "editor.renderWhitespace": true,
+    "editor.renderIndentGuides": false,
+    "editor.folding": true,
+
+// projects
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true,
+        "**/build": true
+    },
+
+// other
+    "http.proxy": ""
+}

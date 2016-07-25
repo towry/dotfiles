@@ -15,7 +15,9 @@
 		"*.swf",
 		"*.jar",
 		"*.zip",
-		"*.out"
+		"*.out",
+		"*.mp4",
+		"*.mp3"
 	],
 	"color_scheme": "Packages/User/SublimeLinter/gruvbox (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
@@ -28,7 +30,8 @@
 		"dest",
 		"bower_components",
 		"node_modules",
-		"build"
+		"build",
+		"tmp"
 	],
 	"font_face": "Monaco",
 	"font_size": 13,
