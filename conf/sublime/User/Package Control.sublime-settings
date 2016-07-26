@@ -31,6 +31,7 @@
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
 		"Swift",
-		"TOML"
+		"TOML",
+		"Vintageous"
 	]
 }

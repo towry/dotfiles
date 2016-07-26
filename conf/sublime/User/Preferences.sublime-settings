@@ -60,5 +60,6 @@
 	"tab_size": 4,
 	"translate_tabs_to_spaces": false,
 	"word_wrap": false,
-	"wrap_width": 80
+	"wrap_width": 80,
+	"vintageous_enable_cmdline_mode": false
 }
