@@ -21,6 +21,7 @@
 		"InsertDate",
 		"Licence Snippets",
 		"NASM x86 Assembly",
+		"Objective-C Autocompletion",
 		"Package Control",
 		"Pretty JSON",
 		"Ruby Slim",
@@ -31,7 +32,6 @@
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
 		"Swift",
-		"TOML",
-		"Vintageous"
+		"TOML"
 	]
 }
