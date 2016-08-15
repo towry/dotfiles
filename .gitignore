@@ -6,3 +6,4 @@ link/.config/configstore/
 workspaceStorage
 conf/VSCode/projects.json
 asciinema
+gtk-*/
