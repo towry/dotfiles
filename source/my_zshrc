@@ -44,7 +44,6 @@ export PATH
 [[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
 
 source ~/.gvm/scripts/gvm
-export GOPATH=/Users/towry/dev/goenv
 PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
 export PYTHONPATH
 
