@@ -28,7 +28,6 @@
 		".hg",
 		"CVS",
 		"dest",
-		"bower_components",
 		"node_modules",
 		"build",
 		"tmp"
