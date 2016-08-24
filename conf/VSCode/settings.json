@@ -8,6 +8,7 @@
     "editor.renderWhitespace": true,
     "editor.renderIndentGuides": false,
     "editor.folding": true,
+	"editor.selectionHighlight": false,
 
 // projects
     "files.exclude": {
