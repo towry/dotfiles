@@ -255,6 +255,8 @@ function! NVimrcLoadFiletypeSettings()
    \  | setl shiftwidth=2
    \  | setl expandtab
 
+  au BufNewFile,BufRead *.es set filetype=javascript
+
  augroup END
 endfunction
 
