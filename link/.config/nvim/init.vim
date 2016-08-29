@@ -271,7 +271,7 @@ function! NVimrcLoadColors()
   " endif
   if !has('nvim')
     set lines=44 columns=95
-    set guifont=Monaco:h13
+    set guifont=Monaco:h14
     " set linespace=2
   endif
 endfunction
