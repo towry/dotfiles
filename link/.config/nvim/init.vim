@@ -148,7 +148,7 @@ function! NVimrcLoadSettings()
   set noerrorbells visualbell t_vb= " disable annoying terminal sounds
   set encoding=utf-8 " universal text encoding, compatible with ascii
   set noequalalways
-  set nolist
+  set list
   set listchars=tab:▸\ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
   set showbreak=↪\ 
   set fillchars=diff:⣿,vert:│
@@ -193,7 +193,7 @@ function! NVimrcLoadSettings()
     " set cursorline
   end
   set cursorcolumn
-  set cmdheight=2
+  " set cmdheight=2
 
   set hidden " switch buffer without saving?
 
@@ -282,22 +282,22 @@ function! NVimrcLoadTerminalSettings()
       au TermOpen * let g:last_terminal_job_id = b:terminal_job_id
       au WinEnter term://* startinsert
     augroup END
-    let g:terminal_color_0  = '#2e3436'
-    let g:terminal_color_1  = '#cc0000'
-    let g:terminal_color_2  = '#4e9a06'
-    let g:terminal_color_3  = '#c4a000'
-    let g:terminal_color_4  = '#3465a4'
-    let g:terminal_color_5  = '#75507b'
-    let g:terminal_color_6  = '#0b939b'
-    let g:terminal_color_7  = '#d3d7cf'
-    let g:terminal_color_8  = '#555753'
-    let g:terminal_color_9  = '#ef2929'
-    let g:terminal_color_10 = '#8ae234'
-    let g:terminal_color_11 = '#fce94f'
-    let g:terminal_color_12 = '#729fcf'
-    let g:terminal_color_13 = '#ad7fa8'
-    let g:terminal_color_14 = '#00f5e9'
-    let g:terminal_color_15 = '#eeeeec'
+    " let g:terminal_color_0  = '#2e3436'
+    " let g:terminal_color_1  = '#cc0000'
+    " let g:terminal_color_2  = '#4e9a06'
+    " let g:terminal_color_3  = '#c4a000'
+    " let g:terminal_color_4  = '#3465a4'
+    " let g:terminal_color_5  = '#75507b'
+    " let g:terminal_color_6  = '#0b939b'
+    " let g:terminal_color_7  = '#d3d7cf'
+    " let g:terminal_color_8  = '#555753'
+    " let g:terminal_color_9  = '#ef2929'
+    " let g:terminal_color_10 = '#8ae234'
+    " let g:terminal_color_11 = '#fce94f'
+    " let g:terminal_color_12 = '#729fcf'
+    " let g:terminal_color_13 = '#ad7fa8'
+    " let g:terminal_color_14 = '#00f5e9'
+    " let g:terminal_color_15 = '#eeeeec'
   endif
 endfunction
 
