@@ -2,8 +2,7 @@ cache/
 backup/
 ac-comphist.dat
 .netrwhist
-link/.config/configstore/
 workspaceStorage
 conf/VSCode/projects.json
-asciinema
-gtk-*/
+link/.config/*
+!link/.config/nvim
