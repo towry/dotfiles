@@ -265,15 +265,15 @@ endfunction
 " Theme and colors
 function! NVimrcLoadColors()
   set background=dark
-  " if $TERM =~ 'screen-256color' || $TERM =~ 'rxvt-unicode-256color' || $TERM =~ 'xterm-256color'
-    " colorscheme twilight-term256
-  " else
+  if $TERM =~ 'screen-256color' || $TERM =~ 'rxvt-unicode-256color' || $TERM =~ 'xterm-256color'
+    " colorscheme default
+  else
+    if !has('nvim')
+      set guifont=Inconsolata:h14
+      set lines=44 columns=95
+      " set linespace=2
+    endif
     colorscheme gruvbox
-  " endif
-  if !has('nvim')
-    set lines=44 columns=95
-    set guifont=mononoki:h14
-    " set linespace=2
   endif
 endfunction
 
@@ -305,6 +305,8 @@ function! NVimrcLoadTerminalSettings()
 endfunction
 
 function! NVimrcStart()
+  let g:vimsyn_embed='0'
+
   call NVimrcLoadMappings()
   if !exists('g:nvimrc_initialized')
     let g:is_windows = has('win32') || has('win64')
