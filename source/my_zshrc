@@ -4,16 +4,11 @@
 alias cls="clear"
 alias pyact="pyenv activate"
 alias pydeact="pyenv deactivate"
-alias n="gnvim"
 alias s="subl"
-alias vi="nvim"
+alias m="mvim"
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
-alias car="cargo"
 alias sshwanglt="ssh wanglt@devold.dqprism.com"
-alias sshtowry="ssh towry@towry.dqprism.com"
-alias sshstatic="ssh chend@static.moseeker.com"
-# alias rm="del"
 
 # >>> Version managers           
 
@@ -35,8 +30,8 @@ source ~/.dotfiles/source/shutils
 # <<<
 
 # >>> Exports
-PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
-export PATH
+# PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
+# export PATH
 # <<<
 
 # eval "$(docker-machine env default)"
@@ -47,10 +42,8 @@ source ~/.gvm/scripts/gvm
 PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
 export PYTHONPATH
 
-# code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export VISUAL=nvim
+export VISUAL=vim
 export EDITOR="$VISUAL"

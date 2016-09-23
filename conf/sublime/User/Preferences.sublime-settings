@@ -20,6 +20,7 @@
 		"*.mp3"
 	],
 	"color_scheme": "Packages/User/SublimeLinter/gruvbox (SL).tmTheme",
+	"default_line_ending": "unix",
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -54,8 +55,13 @@
 	[
 		80
 	],
+	"save_on_focus_lost": false,
 	"scroll_past_end": true,
+	"scroll_speed": 0.9,
+	"show_definitions": false,
+	"show_errors_inline": false,
 	"show_full_path": true,
+	"show_tab_close_buttons": true,
 	"tab_size": 4,
 	"translate_tabs_to_spaces": false,
 	"vintageous_enable_cmdline_mode": false,

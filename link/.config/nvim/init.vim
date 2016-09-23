@@ -18,7 +18,7 @@ function! NVimrcLoadPlugins()
   Plug 'tpope/vim-commentary'
   Plug 'morhetz/gruvbox'
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-  Plug 'othree/yajs.vim'
+  Plug 'othree/yajs.vim', { 'for': 'javascript' }
   Plug 'mxw/vim-jsx', { 'for': 'jsx' }
   Plug 'airblade/vim-gitgutter'
   Plug 'jeetsukumaran/vim-buffergator'
@@ -28,12 +28,12 @@ function! NVimrcLoadPlugins()
   " Plug 'qpkorr/vim-bufkill'
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
   Plug 'mileszs/ack.vim' 
-  Plug 'rust-lang/rust.vim'
+  Plug 'rust-lang/rust.vim', { 'for': 'rs' }
   " Plug 'mhinz/vim-startify'
   " Plug 'tpope/vim-vinegar'
   Plug 'jeetsukumaran/vim-filebeagle'
   Plug 'vim-scripts/SearchComplete'
-  Plug 'toyamarinyon/vim-swift'
+  Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   Plug 'wincent/loupe'
 
   " === NERDTree
@@ -193,7 +193,7 @@ function! NVimrcLoadSettings()
     set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P" 
     " set cursorline
   end
-  set cursorcolumn
+  " set cursorcolumn
   " set cmdheight=2
 
   set hidden " switch buffer without saving?
@@ -272,7 +272,7 @@ function! NVimrcLoadColors()
   " endif
   if !has('nvim')
     set lines=44 columns=95
-    set guifont=Monaco:h14
+    set guifont=mononoki:h14
     " set linespace=2
   endif
 endfunction
