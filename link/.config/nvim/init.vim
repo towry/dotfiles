@@ -266,7 +266,7 @@ endfunction
 function! NVimrcLoadColors()
   set background=dark
   if $TERM =~ 'screen-256color' || $TERM =~ 'rxvt-unicode-256color' || $TERM =~ 'xterm-256color'
-    " colorscheme default
+    colorscheme default
   else
     if !has('nvim')
       set guifont=Inconsolata:h14
