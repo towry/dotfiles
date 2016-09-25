@@ -149,7 +149,7 @@ function! NVimrcLoadSettings()
   set noerrorbells visualbell t_vb= " disable annoying terminal sounds
   set encoding=utf-8 " universal text encoding, compatible with ascii
   set noequalalways
-  set list
+  " set list
   set listchars=tab:▸\ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
   set showbreak=↪\ 
   set fillchars=diff:⣿,vert:│
@@ -265,15 +265,12 @@ endfunction
 " Theme and colors
 function! NVimrcLoadColors()
   set background=dark
-  if $TERM =~ 'screen-256color' || $TERM =~ 'rxvt-unicode-256color' || $TERM =~ 'xterm-256color'
-    colorscheme gruvbox
-  else
-    if !has('nvim')
-      set guifont=Inconsolata:h14
-      set lines=44 columns=95
-      " set linespace=2
-    endif
-    colorscheme gruvbox
+  colorscheme gruvbox
+  if has('gui_macvim')
+    " set guifont=mononoki:h15
+    set guifont=Meslo\ LG\ M\ Regular:h14
+    set lines=37 columns=88
+    " set linespace=2
   endif
 endfunction
 
