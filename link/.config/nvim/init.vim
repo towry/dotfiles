@@ -17,10 +17,10 @@ function! NVimrcLoadPlugins()
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'morhetz/gruvbox'
-  Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
+  " Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   Plug 'othree/yajs.vim', { 'for': 'javascript' }
-  Plug 'mxw/vim-jsx', { 'for': 'jsx' }
-  Plug 'airblade/vim-gitgutter'
+  " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+  " Plug 'airblade/vim-gitgutter'
   Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
@@ -34,7 +34,7 @@ function! NVimrcLoadPlugins()
   Plug 'jeetsukumaran/vim-filebeagle'
   Plug 'vim-scripts/SearchComplete'
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
-  Plug 'wincent/loupe'
+  " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
 
   " === NERDTree
   " Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -80,7 +80,7 @@ function! NVimrcLoadPlugins()
   " vnoremap <leader>dp :diffput<cr>:diffupdate<cr>
   " nnoremap <leader>dg :diffget<cr>:diffupdate<cr>
   " vnoremap <leader>dg :diffget<cr>:diffupdate<cr>
-  Plug 'tpope/vim-fugitive'
+  " Plug 'tpope/vim-fugitive'
 
   call plug#end()
 endfunction
@@ -149,7 +149,7 @@ function! NVimrcLoadSettings()
   set noerrorbells visualbell t_vb= " disable annoying terminal sounds
   set encoding=utf-8 " universal text encoding, compatible with ascii
   set noequalalways
-  " set list
+  set list
   set listchars=tab:▸\ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
   set showbreak=↪\ 
   set fillchars=diff:⣿,vert:│
@@ -224,6 +224,11 @@ function! NVimrcLoadSettings()
   if !has('nvim')
     set ttyfast
     set ruler
+  endif
+
+  if has('gui_macvim')
+    set guioptions -=m
+    set guioptions -=T
   endif
 endfunction
 
