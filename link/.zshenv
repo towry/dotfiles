@@ -23,3 +23,4 @@ source ~/.dotfiles/source/my_zshrc
 
 export GOPATH=/Users/towry/workspace/goenv
 export PATH="$PATH:$GOPATH/bin"
+export PATH="$HOME/.cargo/bin:$PATH"

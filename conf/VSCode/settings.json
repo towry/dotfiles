@@ -1,8 +1,8 @@
 // 将设置放入此文件中以覆盖默认设置
 {
 // editor config
-    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
-    "editor.fontSize": 13,
+    "editor.fontFamily": "'Meslo LG M Regular', Menlo, 'Courier New', monospace",
+    "editor.fontSize": 14,
     "editor.insertSpaces": false,
     "editor.rulers": [80],
     "editor.renderWhitespace": true,

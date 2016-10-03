@@ -1,3 +1,5 @@
 // 将键绑定放入此文件中以覆盖默认值
 [
+	{ "key": "cmd+f2", 		"command": "bookmarks.toggle" },
+	{ "key": "f2", 			"command": "bookmarks.jumpToNext" }
 ]
