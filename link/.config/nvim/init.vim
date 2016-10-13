@@ -182,6 +182,7 @@ function! NVimrcLoadSettings()
   set timeout " enable timeout of key codes and mappings(the default)
   set timeoutlen=360 " big timeout for key sequences
   set ttimeoutlen=6 " small timeout for key sequences since these will be normally scripted
+  set formatoptions-=cro
 
   " set noantialias
   set display+=lastline

@@ -15,14 +15,17 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.DS_Store": true,
-		"**/*.pyc": true
+		"**/*.pyc": true,
+        "**/.webpack_cache": true
     },
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
         "**/tmp": true,
         "**/build": true,
-		"**/dest": true
+		"**/dest": true,
+        "**/.webpack_cache": true,
+        "**/temp": true
     },
 
 // other

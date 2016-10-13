@@ -29,8 +29,11 @@
 		".hg",
 		"CVS",
 		"dest",
+		"dist",
 		"build",
 		"tmp",
+		"temp",
+		".webpack_cache/",
 		"bower_components/",
 		"node_modules/"
 	],
