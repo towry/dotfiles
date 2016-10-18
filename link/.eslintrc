@@ -10,9 +10,9 @@
     "no-unused-vars": [2, 
       {
       "args": "after-used", 
-      "argsIgnorePattern": "^React|angular",
+      "argsIgnorePattern": "^React|angular|h",
       "vars": "all",
-      "varsIgnorePattern": "^React|angular"
+      "varsIgnorePattern": "^React|angular|h"
       }
     ]
   },
