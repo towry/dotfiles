@@ -16,6 +16,9 @@
       }
     ]
   },
+  "plugins": [
+	"react"
+  ],
   "env": {
     "es6": true,
     "browser": true,
@@ -26,10 +29,10 @@
   },
   "extends": "eslint:recommended",
   "ecmaFeatures": {
-    "jsx": true,
     "experimentalObjectRestSpread": true,
     "modules": true,
     "spread": true,
+	"classes": true
   },
   "globals": {
     "react": true,
@@ -41,6 +44,9 @@
 	"Vue": true
   },
   "parserOptions": {
-    "sourceType": "module"
+    "sourceType": "module",
+	"ecmaFeatures": {
+	  "jsx": true
+	}
   }
 }

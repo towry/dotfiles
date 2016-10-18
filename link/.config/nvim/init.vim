@@ -21,6 +21,7 @@ function! NVimrcLoadPlugins()
   Plug 'othree/yajs.vim', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
   " Plug 'airblade/vim-gitgutter'
+  " list, select and switch between buffers
   Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
@@ -31,14 +32,14 @@ function! NVimrcLoadPlugins()
   Plug 'rust-lang/rust.vim', { 'for': 'rs' }
   " Plug 'mhinz/vim-startify'
   " Plug 'tpope/vim-vinegar'
-  Plug 'jeetsukumaran/vim-filebeagle'
+  " Plug 'jeetsukumaran/vim-filebeagle'
   Plug 'vim-scripts/SearchComplete'
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
 
   " === NERDTree
-  " Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-  " let g:NERDTreeIgnore = ['\.pyc$']
+  Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+  let g:NERDTreeIgnore = ['\.pyc$']
 
   " === CtrlP
   Plug 'ctrlpvim/ctrlp.vim'
@@ -51,7 +52,7 @@ function! NVimrcLoadPlugins()
   endif
   " let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
   let g:ctrlp_custom_ignore = {
-    \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|dist/|dest/',
+    \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|dist/|dest/|temp/',
     \ 'file': '\v\.(exe|so|dll|png|gif|jpeg|jpg|bmp|pyc)$',
     \ 'link': '',
     \ }
@@ -90,7 +91,7 @@ endfunction
 function! NVimrcLoadMappings()
   let g:mapleader = ","
 
-  " nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
+  nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
   inoremap <leader><leader> <esc>
   nnoremap <leader>k :bnext<CR>
   nnoremap <leader>j :bprevious<CR>
@@ -182,7 +183,7 @@ function! NVimrcLoadSettings()
   set timeout " enable timeout of key codes and mappings(the default)
   set timeoutlen=360 " big timeout for key sequences
   set ttimeoutlen=6 " small timeout for key sequences since these will be normally scripted
-  set formatoptions-=cro
+  set formatoptions-=ro
 
   " set noantialias
   set display+=lastline
@@ -265,6 +266,7 @@ function! NVimrcLoadFiletypeSettings()
   au BufNewFile,BufRead *.es set filetype=javascript
 
  augroup END
+
 endfunction
 
 
