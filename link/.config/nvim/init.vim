@@ -17,7 +17,6 @@ function! NVimrcLoadPlugins()
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'morhetz/gruvbox'
-  " Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   Plug 'othree/yajs.vim', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
   " Plug 'airblade/vim-gitgutter'
@@ -28,11 +27,11 @@ function! NVimrcLoadPlugins()
   " Plug 'vim-scripts/bufkill.vim'
   " Plug 'qpkorr/vim-bufkill'
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
-  Plug 'mileszs/ack.vim' 
-  Plug 'rust-lang/rust.vim', { 'for': 'rs' }
+  Plug 'mileszs/ack.vim'
+  Plug 'rust-lang/rust.vim', { 'for': 'rust' }
   " Plug 'mhinz/vim-startify'
   " Plug 'tpope/vim-vinegar'
-  " Plug 'jeetsukumaran/vim-filebeagle'
+  Plug 'jeetsukumaran/vim-filebeagle'
   Plug 'vim-scripts/SearchComplete'
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
@@ -111,9 +110,9 @@ function! NVimrcLoadMappings()
   " vnoremap <silent> <c-j> :m '>+1<cr>gv=gv
 
   " help
-  inoremap <f1> <esc>:help 
-  nnoremap <f1> <esc>:help 
-  vnoremap <f1> <esc>:help 
+  inoremap <f1> <esc>:help
+  nnoremap <f1> <esc>:help
+  vnoremap <f1> <esc>:help
 
   " clear search highlight with ,c
   nnoremap <silent> <leader>c :noh<cr>
@@ -152,7 +151,7 @@ function! NVimrcLoadSettings()
   set noequalalways
   set list
   set listchars=tab:▸\ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
-  set showbreak=↪\ 
+  set showbreak=↪\
   set fillchars=diff:⣿,vert:│
   set showcmd " display incomplete commands
   set completeopt=menu,menuone,longest " disable preview scratch window
@@ -162,9 +161,9 @@ function! NVimrcLoadSettings()
   set relativenumber " shows relative line numbers for easy motions
   set colorcolumn=80
 
-  set softtabstop=4 
+  set softtabstop=4
   set tabstop=4
-  set shiftwidth=4 
+  set shiftwidth=4
   set noexpandtab " expand tabs into spaces
 
   set ignorecase " ignore case when searching
@@ -172,7 +171,7 @@ function! NVimrcLoadSettings()
   set incsearch " highlight matches while typing search pattern
   set hlsearch " highlight previous search matches
   set showmatch " briefly jump to the matching bracket on insert
-  set matchtime=2 " time in decisecons to jump back from matching bracket 
+  set matchtime=2 " time in decisecons to jump back from matching bracket
   " set textwidth=80 " number of character allowed in a line
   set nowrap " automatically wrap text when 'textwidth' is reached
   set foldmethod=indent " by default, fold using indentation
@@ -192,7 +191,7 @@ function! NVimrcLoadSettings()
   set shortmess=at
   if has('nvim')
     set laststatus=2
-    set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P" 
+    set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
     " set cursorline
   end
   " set cursorcolumn
@@ -344,9 +343,9 @@ call NVimrcStart()
 
 " ========== O T H E R . F U N C T I O N ===========
 function! g:WorkaroundNERDTreeToggle()
-	try 
-		NERDTreeToggle 
-	catch 
-		silent! NERDTree 
+	try
+		NERDTreeToggle
+	catch
+		silent! NERDTree
 	endtry
 endfunction
