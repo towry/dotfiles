@@ -22,6 +22,7 @@
 	"color_scheme": "Packages/User/SublimeLinter/gruvbox (SL).tmTheme",
 	"default_line_ending": "unix",
 	"ensure_newline_at_eof_on_save": true,
+	"trim_trailing_white_space_on_save": true,
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -70,5 +71,5 @@
 	"translate_tabs_to_spaces": false,
 	"vintageous_enable_cmdline_mode": false,
 	"word_wrap": false,
-	"wrap_width": 80
+	"wrap_width": 80,
 }
