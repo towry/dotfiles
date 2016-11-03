@@ -19,7 +19,11 @@ function! NVimrcLoadPlugins()
   Plug 'morhetz/gruvbox'
   Plug 'othree/yajs.vim', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+
   " Plug 'airblade/vim-gitgutter'
+  " let g:gitgutter_realtime = 0
+  " let g:gitgutter_eager = 0
+
   " list, select and switch between buffers
   Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
@@ -45,13 +49,13 @@ function! NVimrcLoadPlugins()
   let g:ctrlp_map = ';p'
   let g:ctrl_cmd = ';p'
   if !g:is_windows
-    set wildignore+=/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
+    set wildignore+=target/debug/*,/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
   else
     set wildignore+=\\tmp\\*,*.swp,*.zip,*.exe " Windows
   endif
   " let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
   let g:ctrlp_custom_ignore = {
-    \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|dist/|dest/|temp/',
+    \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|dist/|dest/|temp/|target/debug/',
     \ 'file': '\v\.(exe|so|dll|png|gif|jpeg|jpg|bmp|pyc)$',
     \ 'link': '',
     \ }
