@@ -11,3 +11,5 @@ patch:
     - schema: wubi86
    #  - schema: bopomofo
    #  - schema: double_pinyin_flypy
+  "switcher/hotkeys":
+    - "Control+grave"
