@@ -5,11 +5,10 @@ alias cls="clear"
 alias pyact="pyenv activate"
 alias pydeact="pyenv deactivate"
 alias s="subl"
-alias m="mvim"
+alias n="gnvim"
 alias gac="git add . && git commit"
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
-alias sshwanglt="ssh wanglt@devold.dqprism.com"
 
 # >>> Version managers
 
