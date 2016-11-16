@@ -35,6 +35,7 @@
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
 		"Swift",
-		"TOML"
+		"TOML",
+		"WakaTime"
 	]
 }

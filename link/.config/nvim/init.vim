@@ -38,6 +38,7 @@ function! NVimrcLoadPlugins()
   Plug 'jeetsukumaran/vim-filebeagle'
   Plug 'vim-scripts/SearchComplete'
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
+  Plug 'wakatime/vim-wakatime'
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
 
   " === NERDTree
