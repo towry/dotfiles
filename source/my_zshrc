@@ -9,6 +9,7 @@ alias n="gnvim"
 alias gac="git add . && git commit"
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
+alias g="git"
 
 # >>> Version managers
 
@@ -21,7 +22,7 @@ export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 
 # NVM
 export NVM_DIR="/Users/towry/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # <<<<
 
