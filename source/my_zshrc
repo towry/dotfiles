@@ -39,7 +39,7 @@ source ~/.dotfiles/source/shutils
 
 [[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
 
-source ~/.gvm/scripts/gvm
+# source ~/.gvm/scripts/gvm
 PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
 export PYTHONPATH
 

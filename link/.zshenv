@@ -4,7 +4,7 @@ export PATH="/Users/towry/.pyenv/shims:/Library/Frameworks/Python.framework/Vers
 export PATH="/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH"
 # >>> Sources
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-[[ -s "/Users/towry/.gvm/scripts/gvm" ]] && source "/Users/towry/.gvm/scripts/gvm"
+# [[ -s "/Users/towry/.gvm/scripts/gvm" ]] && source "/Users/towry/.gvm/scripts/gvm"
 
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
