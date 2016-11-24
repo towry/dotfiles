@@ -17,7 +17,7 @@ function! NVimrcLoadPlugins()
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
   Plug 'morhetz/gruvbox'
-  Plug 'othree/yajs.vim', { 'for': 'javascript' }
+  Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 
   Plug 'airblade/vim-gitgutter'
