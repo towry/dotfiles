@@ -14,15 +14,10 @@ if [[ -d $HOME/.pyenv ]];then
 	eval "$(pyenv virtualenv-init -)"
 fi
 
-if which swiftenv > /dev/null;then
-	eval "$(swiftenv init -)"; 
-fi
+swiftenv() {
+	if which swiftenv > /dev/null;then
+		eval "$(swiftenv init -)";
+	fi
+}
 
 source ~/.dotfiles/source/my_zshrc
-
-export GOPATH=/Users/towry/workspace/goenv
-export PATH="$PATH:$GOPATH/bin"
-export PATH="$HOME/.cargo/bin:$PATH"
-
-# autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh

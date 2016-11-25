@@ -88,3 +88,14 @@ source $ZSH/oh-my-zsh.sh
 
 
 source ~/.dotfiles/link/.bash_profile
+
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+	compinit;
+else
+	compinit -C;
+fi;

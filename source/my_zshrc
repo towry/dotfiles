@@ -20,15 +20,13 @@ PATH="/Users/towry/.multirust/toolchains/stable/cargo/bin:/Library/Frameworks/Py
 export PATH
 export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 
+export GOPATH=/Users/towry/workspace/goenv
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$HOME/.cargo/bin:$PATH"
+
 # NVM
 export NVM_DIR="/Users/towry/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# <<<<
-
-# >>> source
-source ~/.dotfiles/source/shutils
-# <<<
 
 # >>> Exports
 # PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
@@ -37,7 +35,9 @@ source ~/.dotfiles/source/shutils
 
 # eval "$(docker-machine env default)"
 
-[[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
+loadrsvm() {
+	[[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
+}
 
 # source ~/.gvm/scripts/gvm
 PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
@@ -48,3 +48,10 @@ export LANG=en_US.UTF-8
 
 export VISUAL=vim
 export EDITOR="$VISUAL"
+# autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+
+# >>> source
+source ~/.dotfiles/source/shutils
+source ~/.dotfiles/vendor/z/z.sh
+# <<<
