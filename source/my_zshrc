@@ -10,6 +10,7 @@ alias gac="git add . && git commit"
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
 alias g="git"
+alias sshcartmen="ssh cartmen@104.238.173.139"
 
 # >>> Version managers
 
