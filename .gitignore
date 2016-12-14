@@ -6,3 +6,5 @@ workspaceStorage
 conf/VSCode/projects.json
 link/.config/*
 !link/.config/nvim
+node_modules/
+.atom/packages/
