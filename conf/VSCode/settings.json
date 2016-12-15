@@ -29,5 +29,6 @@
     },
 
 // other
-    "http.proxy": ""
+	"window.titleBarStyle": "native",
+	"files.trimTrailingWhitespace": true
 }
