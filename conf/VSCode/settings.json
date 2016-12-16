@@ -32,5 +32,6 @@
 	"window.titleBarStyle": "native",
 	"files.trimTrailingWhitespace": true,
 	"vimStyle.defaultMode": "insert",
-	"vimStyle.imapEsc": ",,"
+	"vimStyle.imapEsc": ",,",
+	"vimStyle.changeCursorStyle": false
 }
