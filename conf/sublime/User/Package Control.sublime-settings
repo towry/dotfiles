@@ -38,6 +38,6 @@
 		"SublimeLinter-pyflakes",
 		"Swift",
 		"TOML",
-		"WakaTime"
+		"TypeScript"
 	]
 }
