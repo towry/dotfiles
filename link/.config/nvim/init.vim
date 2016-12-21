@@ -324,6 +324,7 @@ function! NVimrcStart()
 
   call NVimrcLoadSettings()
   call NVimrcLoadColors()
+  call NVimrcAutoSettings()
 endfunction
 
 " =========== S T A R T ===========
