@@ -20,12 +20,12 @@ function! NVimrcLoadPlugins()
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 
-  Plug 'airblade/vim-gitgutter'
   let g:gitgutter_realtime = 0
   let g:gitgutter_eager = 0
+  Plug 'airblade/vim-gitgutter'
 
   " list, select and switch between buffers
-  Plug 'jeetsukumaran/vim-buffergator'
+  " Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
   " Plug 'vim-scripts/bufkill.vim'
@@ -33,12 +33,10 @@ function! NVimrcLoadPlugins()
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
   Plug 'mileszs/ack.vim'
   Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-  " Plug 'mhinz/vim-startify'
   " Plug 'tpope/vim-vinegar'
   Plug 'jeetsukumaran/vim-filebeagle'
-  Plug 'vim-scripts/SearchComplete'
+  " Plug 'vim-scripts/SearchComplete'
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
-  Plug 'wakatime/vim-wakatime'
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
 
   " === NERDTree
@@ -72,10 +70,6 @@ function! NVimrcLoadPlugins()
   " let s:eslint_path = system('which eslint')
   " let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
   let g:neomake_html_enabled_makers = []
-  augroup Neomake
-    au!
-    au! BufWritePost * Neomake
-  augroup END
 
   " === Vim-fugitive
   " nnoremap <leader>gs :Gstatus<cr>
@@ -92,6 +86,65 @@ function! NVimrcLoadPlugins()
   call plug#end()
 endfunction
 
+function! NVimrcAutoSettings()
+  au!
+  au BufWinEnter quickfix nnoremap <silent> <buffer>
+        \ q :cclose<cr>:lclose<cr>
+
+  " ======================
+  " HTML
+  au FileType html
+    \   setl foldmethod=marker
+    \ | setl foldenable
+
+  " C/C++
+  au FileType c,cpp
+    \   nnoremap <buffer> <silent> <leader>ff :call Uncrustify('c')<cr>
+    \ | setl commentstring=//%s
+
+  " Python
+  au FileType python
+    \   setl softtabstop=4
+    \ | setl shiftwidth=4
+    \ | setl textwidth=80
+    \ | set expandtab
+  command! DocTest !python -m doctest %
+
+  " Vim
+  au FileType vim
+   \    setl softtabstop=2
+   \  | setl shiftwidth=2
+   \  | setl expandtab
+
+  au BufNewFile,BufRead *.es set filetype=javascript
+
+  " ======================
+  " terminal
+  if has('nvim')
+    au TermOpen * let g:last_terminal_job_id = b:terminal_job_id
+    au WinEnter term://* startinsert
+    " let g:terminal_color_0  = '#2e3436'
+    " let g:terminal_color_1  = '#cc0000'
+    " let g:terminal_color_2  = '#4e9a06'
+    " let g:terminal_color_3  = '#c4a000'
+    " let g:terminal_color_4  = '#3465a4'
+    " let g:terminal_color_5  = '#75507b'
+    " let g:terminal_color_6  = '#0b939b'
+    " let g:terminal_color_7  = '#d3d7cf'
+    " let g:terminal_color_8  = '#555753'
+    " let g:terminal_color_9  = '#ef2929'
+    " let g:terminal_color_10 = '#8ae234'
+    " let g:terminal_color_11 = '#fce94f'
+    " let g:terminal_color_12 = '#729fcf'
+    " let g:terminal_color_13 = '#ad7fa8'
+    " let g:terminal_color_14 = '#00f5e9'
+    " let g:terminal_color_15 = '#eeeeec'
+  endif
+
+  " =======================
+  " Neomake
+  au! BufWritePost * Neomake
+endfunction
 
 " NVim mapping
 function! NVimrcLoadMappings()
@@ -124,11 +177,6 @@ function! NVimrcLoadMappings()
   " clear search highlight with ,c
   nnoremap <silent> <leader>c :noh<cr>
 
-  " Quickfix/location list {{{
-  augroup quick_loc_list
-    au! BufWinEnter quickfix nnoremap <silent> <buffer>
-          \ q :cclose<cr>:lclose<cr>
-  augroup END
   nnoremap <silent> <leader>q :botright copen 10<cr>
   nnoremap <silent> <leader>l :botright lopen 10<cr>
 
@@ -240,42 +288,6 @@ function! NVimrcLoadSettings()
   endif
 endfunction
 
-
-" File type settings
-function! NVimrcLoadFiletypeSettings()
- augroup filetype_settings
-  au!
-  " HTML
-  au FileType html
-    \   setl foldmethod=marker
-    \ | setl foldenable
-
-  " C/C++
-  au FileType c,cpp
-    \   nnoremap <buffer> <silent> <leader>ff :call Uncrustify('c')<cr>
-    \ | setl commentstring=//%s
-
-  " Python
-  au FileType python
-    \   setl softtabstop=4
-    \ | setl shiftwidth=4
-    \ | setl textwidth=80
-    \ | set expandtab
-  command! DocTest !python -m doctest %
-
-  " Vim
-  au FileType vim
-   \    setl softtabstop=2
-   \  | setl shiftwidth=2
-   \  | setl expandtab
-
-  au BufNewFile,BufRead *.es set filetype=javascript
-
- augroup END
-
-endfunction
-
-
 " Theme and colors
 function! NVimrcLoadColors()
   set background=dark
@@ -285,33 +297,6 @@ function! NVimrcLoadColors()
     set guifont=Meslo\ LG\ M\ Regular:h14
     set lines=37 columns=88
     " set linespace=2
-  endif
-endfunction
-
-function! NVimrcLoadTerminalSettings()
-  " Terminal
-  if has('nvim')
-    augroup Terminal
-      au!
-      au TermOpen * let g:last_terminal_job_id = b:terminal_job_id
-      au WinEnter term://* startinsert
-    augroup END
-    " let g:terminal_color_0  = '#2e3436'
-    " let g:terminal_color_1  = '#cc0000'
-    " let g:terminal_color_2  = '#4e9a06'
-    " let g:terminal_color_3  = '#c4a000'
-    " let g:terminal_color_4  = '#3465a4'
-    " let g:terminal_color_5  = '#75507b'
-    " let g:terminal_color_6  = '#0b939b'
-    " let g:terminal_color_7  = '#d3d7cf'
-    " let g:terminal_color_8  = '#555753'
-    " let g:terminal_color_9  = '#ef2929'
-    " let g:terminal_color_10 = '#8ae234'
-    " let g:terminal_color_11 = '#fce94f'
-    " let g:terminal_color_12 = '#729fcf'
-    " let g:terminal_color_13 = '#ad7fa8'
-    " let g:terminal_color_14 = '#00f5e9'
-    " let g:terminal_color_15 = '#eeeeec'
   endif
 endfunction
 
@@ -338,9 +323,7 @@ function! NVimrcStart()
   endif
 
   call NVimrcLoadSettings()
-  call NVimrcLoadFiletypeSettings()
   call NVimrcLoadColors()
-  call NVimrcLoadTerminalSettings()
 endfunction
 
 " =========== S T A R T ===========
