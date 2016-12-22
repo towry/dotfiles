@@ -48,13 +48,13 @@ function! NVimrcLoadPlugins()
   let g:ctrlp_map = ';p'
   let g:ctrl_cmd = ';p'
   if !g:is_windows
-    set wildignore+=target/debug/*,/tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
+    set wildignore+=target/debug/*,tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
   else
     set wildignore+=\\tmp\\*,*.swp,*.zip,*.exe " Windows
   endif
   " let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
   let g:ctrlp_custom_ignore = {
-    \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|dist/|dest/|temp/|target/debug/',
+    \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|build/|dist/|dest/|temp/|target/debug/|tmp/|docs/',
     \ 'file': '\v\.(exe|so|dll|png|gif|jpeg|jpg|bmp|pyc)$',
     \ 'link': '',
     \ }
