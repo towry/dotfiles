@@ -11,7 +11,6 @@ alias gac="git add . && git commit"
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
 alias g="git"
-alias sshcartman="ssh cartman@45.63.92.58"
 
 # >>> Version managers
 
@@ -57,3 +56,7 @@ export EDITOR="$VISUAL"
 source ~/.dotfiles/source/shutils
 source ~/.dotfiles/vendor/z/z.sh
 # <<<
+
+if [ -f ./private.sh ]; then
+	source ./private.sh
+fi

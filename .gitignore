@@ -8,3 +8,4 @@ link/.config/*
 !link/.config/nvim
 node_modules/
 .atom/packages/
+source/private.sh
