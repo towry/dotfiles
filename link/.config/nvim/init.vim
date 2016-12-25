@@ -164,6 +164,8 @@ function! NVimrcLoadMappings()
   inoremap <F10><F10> <c-o>:update<cr><esc>:q<cr>
   nnoremap <F10><F10> :update<cr>:q<cr>
   nnoremap ;w <C-w>
+  " visual search
+  vnoremap // y/<C-R>"<CR>
 
   " move text up/down
   " nnoremap <silent> <c-j> :m .+1<cr>==
