@@ -29,7 +29,7 @@ function! NVimrcLoadPlugins()
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
   " Plug 'vim-scripts/bufkill.vim'
-  " Plug 'qpkorr/vim-bufkill'
+  Plug 'qpkorr/vim-bufkill'
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
   Plug 'mileszs/ack.vim'
   Plug 'rust-lang/rust.vim', { 'for': 'rust' }
@@ -162,10 +162,10 @@ function! NVimrcLoadMappings()
   nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
   nnoremap <F5> :UndotreeToggle<CR>
   inoremap <leader><leader> <esc>
-  nnoremap <leader>k :bnext<CR>
-  nnoremap <leader>j :bprevious<CR>
+  nnoremap <leader>k :BF<CR>
+  nnoremap <leader>j :BB<CR>
   " nnoremap ;b :Bufferlist<CR>
-  nnoremap ;c :bd<CR>
+  nnoremap ;c :BD<CR>
   nnoremap <F9> :update<CR>:Neomake<CR>
   nnoremap <F3> :update<cr><esc>
   inoremap <F3> <c-o>:update<cr><esc>
