@@ -39,6 +39,13 @@ function! NVimrcLoadPlugins()
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
 
+  " === undotree
+  Plug 'mbbill/undotree'
+  if has("persistent_undo")
+    set undodir=~/.undodir/
+    set undofile
+  endif
+
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   let g:NERDTreeIgnore = ['\.pyc$']
@@ -153,6 +160,7 @@ function! NVimrcLoadMappings()
   let g:mapleader = ","
 
   nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
+  nnoremap <F5> :UndotreeToggle<CR>
   inoremap <leader><leader> <esc>
   nnoremap <leader>k :bnext<CR>
   nnoremap <leader>j :bprevious<CR>
