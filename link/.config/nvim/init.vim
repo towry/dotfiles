@@ -38,6 +38,7 @@ function! NVimrcLoadPlugins()
   " Plug 'vim-scripts/SearchComplete'
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
+  Plug 'milkypostman/vim-togglelist'
 
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -155,6 +156,7 @@ endfunction
 function! NVimrcLoadMappings()
   let g:mapleader = ","
 
+  nmap <script> <silent> <F5> :call ToggleQuickfixList()<CR>
   nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
   inoremap <leader><leader> <esc>
   nnoremap <leader>k :bnext<CR>
@@ -265,7 +267,7 @@ function! NVimrcLoadSettings()
   set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif
   set wildmode=list:full
   set scrolloff=3
-  set autochdir
+  " set autochdir
 
   if $DISABLE_UNNAMED_CLIP != '1'
     set clipboard+=unnamedplus
