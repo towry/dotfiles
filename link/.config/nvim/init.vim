@@ -28,6 +28,8 @@ function! NVimrcLoadPlugins()
   " Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
+  let g:buftabline_numbers = 1
+
   " Plug 'vim-scripts/bufkill.vim'
   Plug 'qpkorr/vim-bufkill' " allows you to kill buffer but keep split layout.
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
@@ -64,7 +66,7 @@ function! NVimrcLoadPlugins()
   Plug 'benekastah/neomake'
   let g:neomake_verbose = 1
   let g:neomake_javascript_enabled_makers = ['eslint']
-  let g:neomake_python_enabled_makers = []
+  let g:neomake_python_enabled_makers = ['flake8']
   let g:neomake_rust_enabled_makers = []
 
   " load local eslint in the project root
