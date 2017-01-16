@@ -305,7 +305,9 @@ function! NVimrcLoadColors()
   colorscheme gruvbox
   if has('gui_macvim')
     " set guifont=mononoki:h15
-    set guifont=Meslo\ LG\ M\ Regular:h14
+    " set guifont=Meslo\ LG\ M\ Regular:h14
+    set macligatures
+    set guifont=Fira\ Code:h14
     set lines=37 columns=88
     " set linespace=2
   endif
