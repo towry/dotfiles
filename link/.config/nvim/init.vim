@@ -19,6 +19,7 @@ function! NVimrcLoadPlugins()
   Plug 'morhetz/gruvbox'
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+  Plug 'ap/vim-css-color', { 'for': ['css', 'scss'] }
 
   let g:gitgutter_realtime = 0
   let g:gitgutter_eager = 0
@@ -304,10 +305,8 @@ function! NVimrcLoadColors()
   set background=dark
   colorscheme gruvbox
   if has('gui_macvim')
-    " set guifont=mononoki:h15
-    " set guifont=Meslo\ LG\ M\ Regular:h14
     set macligatures
-    set guifont=Inconsolata:h16
+    set guifont=Monaco:h13
     set lines=39 columns=88
     " set linespace=2
   endif
