@@ -1,9 +1,8 @@
 // 将设置放入此文件中以覆盖默认设置
 {
 // editor config
-    // "editor.fontFamily": "'Meslo LG M Regular', Menlo, 'Courier New', monospace",
-    "editor.fontFamily": "Fira Code",
-    "editor.fontSize": 14,
+    "editor.fontFamily": "Monaco",
+    "editor.fontSize": 13,
     "editor.fontLigatures": true,
     "editor.insertSpaces": false,
     "editor.rulers": [80],

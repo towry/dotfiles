@@ -19,7 +19,6 @@ function! NVimrcLoadPlugins()
   Plug 'morhetz/gruvbox'
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
-  Plug 'ap/vim-css-color', { 'for': ['css', 'scss'] }
 
   let g:gitgutter_realtime = 0
   let g:gitgutter_eager = 0
@@ -191,10 +190,6 @@ function! NVimrcLoadMappings()
 
   nnoremap <silent> <leader>q :botright copen 10<cr>
   nnoremap <silent> <leader>l :botright lopen 10<cr>
-
-  " Copy & paste
-  vnoremap <C-c> "*y
-  inoremap <C-v> <ESC>"*p
 
   " Neovim
   if has('nvim')
