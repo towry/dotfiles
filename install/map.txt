@@ -1,1 +1,10 @@
 /Users/towry/.ackrc
+/Users/towry/.config/nvim
+/Users/towry/.hammerspoon
+/Users/towry/.bash_profile
+/Users/towry/.bashrc
+/Users/towry/.eslintrc
+/Users/towry/.gitconfig
+/Users/towry/.profile
+/Users/towry/.zshenv
+/Users/towry/.zshrc
