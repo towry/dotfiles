@@ -16,13 +16,7 @@ towry's dotfiles.
 #### via curl
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/towry/dotfiles/master/install/boot.sh)"
-```
-
-#### via wget
-
-```bash
-sh -c "$(wget https://raw.githubusercontent.com/towry/dotfiles/master/install/boot.sh -O -)"
+bash <(curl -s https://raw.githubusercontent.com/towry/dotfiles/master/install/boot.sh)
 ```
 
 ### Usage
