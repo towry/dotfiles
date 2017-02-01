@@ -25,25 +25,29 @@ fi
 while IFS= read -r line; do
 	DEST_NAME=$LINK_DIR/${line#"$HOME/"}
 
-	if [[ -f "$line" && ! -L "$line" ]]; then
-		if [[ -f "$DEST_NAME" ]]; then
-			echo "[DONE] => $DEST_NAME file exists when do $line."
-		fi
+	if [[ -e "$line" && ! -L "$line" ]]; then
+		if [[ -e "$DEST_NAME" ]]; then
+			# remove $line
+			echo "[BACKUP] => $line"
+			mv $line $BACKUP_DIR
 
-		# move file
-		mv $line $DEST_NAME
-		# link file
-		ln -s $DEST_NAME $line
+			ln -s $DEST_NAME $line
+		else
+			# move file
+			mv $line $DEST_NAME
+			# link file
+			ln -s $DEST_NAME $line
+		fi
 		echo "[DONE] => $line"
 	else
 		if [[ -L "$line" ]]; then
 			echo "[DONE] => $line is a symlink."
-		elif [[ -f "$DEST_NAME" ]]; then
+		elif [[ -e "$DEST_NAME" ]]; then
 			# sync from link
 			ln -s $DEST_NAME $line
 			echo "[DONE] => $line"
 		else
-			echo "[FAIL] => $line may not exists."
+			echo "[FAIL] => unknow error."
 		fi
 	fi
 done <"$MAP_FILE"

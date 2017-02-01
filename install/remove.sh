@@ -16,7 +16,7 @@ fi
 
 fname=$(realpath "$1")
 
-if [[ ! -f "$fname" ]]; then
+if [[ ! -e "$fname" ]]; then
 	echo "$fname file not exists."
 	echo "exit."
 	exit 0
@@ -24,7 +24,7 @@ fi
 
 DEST_NAME=$HOME/${fname#"$LINK_DIR/"}
 
-if [[ -f $DEST_NAME ]]; then
+if [[ -e $DEST_NAME ]]; then
 	echo "do you want to restore '$DEST_NAME'?"
 	cmn_ask_to_continue
 fi
@@ -37,6 +37,8 @@ cmn_echo_info "mv {$fname} => {$DEST_NAME}"
 # remove linked file.
 if [[ -f $fname ]]; then
 	rm $fname
+else [[ -d $fname ]]; then
+	rm -r $fname
 fi
 
 remove_from_map $DEST_NAME

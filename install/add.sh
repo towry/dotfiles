@@ -13,8 +13,7 @@ fi
 
 fname=$(realpath "$1")
 
-# Test if is a normal file.
-if [[ ! -f "$fname" ]]; then
+if [[ ! -e "$fname" ]]; then
 	echo "$fname file not exists."
 	echo "exit."
 	exit 0
@@ -29,7 +28,7 @@ fi
 DEST_NAME=$LINK_DIR/${fname#"$HOME/"}
 
 # test if destination file exists.
-if [[ -f "$DEST_NAME" ]]; then
+if [[ -e "$DEST_NAME" ]]; then
 	echo "$DEST_NAME exist"
 	cmn_ask_to_continue "do you want to override it?"
 fi
