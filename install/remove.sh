@@ -23,22 +23,31 @@ if [[ ! -e "$fname" ]]; then
 fi
 
 DEST_NAME=$HOME/${fname#"$LINK_DIR/"}
+DEST_FILE_NAME=$DEST_NAME
+if [[ -d "$fname" ]]; then
+	DEST_NAME=$(dirname $HOME/${fname#"$LINK_DIR/"})
+fi
 
-if [[ -e $DEST_NAME ]]; then
+if [[ -e $DEST_FILE_NAME ]]; then
 	echo "do you want to restore '$DEST_NAME'?"
 	cmn_ask_to_continue
 fi
-# else: continueo
+# else: continue
 
-# move file
-mv $fname $DEST_NAME
-cmn_echo_info "mv {$fname} => {$DEST_NAME}"
+if [[ -L $DEST_FILE_NAME ]]; then
+	rm $DEST_FILE_NAME
+	# move file
+	mv -f $fname $DEST_NAME
+	cmn_echo_info "mv {$fname} => {$DEST_NAME}"
+else
+	cp -rf $fname $DEST_NAME
+fi
 
 # remove linked file.
 if [[ -f $fname ]]; then
 	rm $fname
-else [[ -d $fname ]]; then
+elif [[ -d $fname ]]; then
 	rm -r $fname
 fi
 
-remove_from_map $DEST_NAME
+remove_from_map $DEST_FILE_NAME
