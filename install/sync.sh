@@ -28,6 +28,11 @@ while IFS= read -r line; do
 	DEST_NAME=$LINK_DIR/${line#"$HOME/"}
 
 	if [[ ! -e "$line" ]]; then
+		# create parent directory if not exists.
+		if [[ ! -e $(dirname "$line") ]]; then
+			mkdir -p $(dirname "$line")
+		fi
+
 		ln -s $DEST_NAME $line
 		echo "[DONE] => $line"
 	elif [[ -L "$line" ]]; then
