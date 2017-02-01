@@ -23,31 +23,25 @@ if [[ ! -f $MAP_FILE ]]; then
 fi
 
 while IFS= read -r line; do
+	line_parent_dir=$(dirname "$line")
 	DEST_NAME=$LINK_DIR/${line#"$HOME/"}
 
-	if [[ -e "$line" && ! -L "$line" ]]; then
-		if [[ -e "$DEST_NAME" ]]; then
-			# remove $line
-			echo "[BACKUP] => $line"
-			mv $line $BACKUP_DIR
-
-			ln -s $DEST_NAME $line
-		else
-			# move file
-			mv $line $DEST_NAME
-			# link file
-			ln -s $DEST_NAME $line
-		fi
+	if [[ ! -e "$line" ]]; then
+		ln -s $DEST_NAME $line
 		echo "[DONE] => $line"
-	else
-		if [[ -L "$line" ]]; then
-			echo "[DONE] => $line is a symlink."
-		elif [[ -e "$DEST_NAME" ]]; then
-			# sync from link
-			ln -s $DEST_NAME $line
-			echo "[DONE] => $line"
+	elif [[ -L "$line" ]]; then
+		echo "[DONE] => $line is a symlink."
+	elif [[ -e "$line" && -e "$DEST_NAME" ]]; then
+		# remove local
+		if [[ -d "$line" ]]; then
+			rm -rf "$line"
 		else
-			echo "[FAIL] => unknow error."
+			rm "$line"
 		fi
+		ln -s $DEST_NAME $line
+		echo "[DONE] => $line"
+	elif [[ -e "$line" && ! -e "$DEST_NAME" ]]; then
+		# we only allow add from 'add.sh', so...
+		echo "[FAIL] => You may need fix the map.txt file"
 	fi
 done <"$MAP_FILE"

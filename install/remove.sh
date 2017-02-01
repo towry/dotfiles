@@ -29,7 +29,7 @@ if [[ -d "$fname" ]]; then
 fi
 
 if [[ -e $DEST_FILE_NAME ]]; then
-	echo "do you want to restore '$DEST_NAME'?"
+	echo "do you want to restore '$DEST_FILE_NAME'?"
 	cmn_ask_to_continue
 fi
 # else: continue
@@ -38,7 +38,7 @@ if [[ -L $DEST_FILE_NAME ]]; then
 	rm $DEST_FILE_NAME
 	# move file
 	mv -f $fname $DEST_NAME
-	cmn_echo_info "mv {$fname} => {$DEST_NAME}"
+	cmn_echo_info "mv {$fname} => {$DEST_FILE_NAME}"
 else
 	cp -rf $fname $DEST_NAME
 fi

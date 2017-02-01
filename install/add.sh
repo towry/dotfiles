@@ -26,19 +26,28 @@ if [[ -L "$fname" ]]; then
 fi
 
 DEST_NAME=$LINK_DIR/${fname#"$HOME/"}
+DEST_FILE_NAME=$DEST_NAME
+if [[ -d $fname ]]; then
+	DEST_NAME=$(dirname $LINK_DIR/${fname#"$HOME/"})
+fi
 
 # test if destination file exists.
-if [[ -e "$DEST_NAME" ]]; then
-	echo "$DEST_NAME exist"
+if [[ -e "$DEST_FILE_NAME" ]]; then
+	echo "$DEST_FILE_NAME exist"
 	cmn_ask_to_continue "do you want to override it?"
 fi
 # else: continue
 
 # move file
-mv $fname $DEST_NAME
+cp -rf $fname $DEST_NAME
 # link file
-cmn_echo_info "create link {$DEST_NAME} => {$fname}"
-ln -s $DEST_NAME $fname
+cmn_echo_info "create link {$DEST_FILE_NAME} => {$fname}"
+if [[ -d $fname ]]; then
+	rm -rf $fname
+else
+	rm $fname
+fi
+ln -s $DEST_FILE_NAME $fname
 
 # add to map: $fname
 function add_to_map {
