@@ -56,3 +56,5 @@ main() {
 	env bash ./chmod_all_script.sh
 	env bash ./sync.sh -y
 }
+
+main
