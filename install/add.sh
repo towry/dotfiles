@@ -57,5 +57,5 @@ function add_to_map {
 	fi
 }
 
-add_to_map $fname
+add_to_map ${fname#"$HOME/"}
 # done

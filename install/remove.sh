@@ -50,4 +50,4 @@ elif [[ -d $fname ]]; then
 	rm -r $fname
 fi
 
-remove_from_map $DEST_FILE_NAME
+remove_from_map ${DEST_FILE_NAME#"$HOME/"}

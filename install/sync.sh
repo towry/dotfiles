@@ -23,6 +23,7 @@ if [[ ! -f $MAP_FILE ]]; then
 fi
 
 while IFS= read -r line; do
+	line="$HOME/$line"
 	line_parent_dir=$(dirname "$line")
 	DEST_NAME=$LINK_DIR/${line#"$HOME/"}
 
