@@ -8,7 +8,7 @@ function! NVimrcLoadPlugins()
     call mkdir(g:nvim_plug_dir, 'p')
   endif
   if !isdirectory(g:nvim_plug_dir.'/autoload')
-    execute '!git clone git://github.com/junegunn/vim-plug '
+    execute '!git clone --depth=1 git://github.com/junegunn/vim-plug '
         \ shellescape(g:nvim_plug_dir.'/autoload', 1)
   endif
 
