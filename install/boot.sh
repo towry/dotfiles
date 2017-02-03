@@ -56,6 +56,8 @@ main() {
 	env bash ./chmod_all_script.sh
 	env bash ./sync.sh -y
 
+
+	printf "${BLUE}updating gitmodules...${NORMAL}\n"
 	# submodules
 	if [ -f "$DOTFILES/.gitmodules" ]; then
 		cd $DOTFILES
