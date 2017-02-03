@@ -55,6 +55,12 @@ main() {
 	chmod a+x ./chmod_all_script.sh
 	env bash ./chmod_all_script.sh
 	env bash ./sync.sh -y
+
+	# submodules
+	if [ -f "$DOTFILES/.gitmodules" ]; then
+		cd $DOTFILES
+		git submodule update --init --recursive
+	fi
 }
 
 main
