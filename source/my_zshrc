@@ -11,7 +11,9 @@ alias gac="git add . && git commit"
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
 alias g="git"
-alias vi="nvim"
+if type nvim > /dev/null; then
+	alias vi="nvim"
+fi
 
 # >>> Version managers
 
