@@ -24,7 +24,7 @@ fi
 
 while IFS= read -r line; do
 	line="$HOME/$line"
-	line_parent_dir=$(dirname "$line")
+	# line_parent_dir=$(dirname "$line")
 	DEST_NAME=$LINK_DIR/${line#"$HOME/"}
 
 	if [[ ! -e "$line" ]]; then
@@ -38,10 +38,15 @@ while IFS= read -r line; do
 	elif [[ -L "$line" ]]; then
 		echo "[DONE] => $line is a symlink."
 	elif [[ -e "$line" && -e "$DEST_NAME" ]]; then
-		# remove local
+		# remove local with backup
 		if [[ -d "$line" ]]; then
+			backup_name=$BACKUP_DIR/${line#"$HOME/"}
+			backup_name=$(dirname "$backup_name")
+			cp -rf "$line" "$backup_name"
 			rm -rf "$line"
 		else
+			backup_name=$BACKUP_DIR/${line#"$HOME/"}
+			cp -f "$line" "$backup_name"
 			rm "$line"
 		fi
 		ln -s $DEST_NAME $line
