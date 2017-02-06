@@ -25,7 +25,7 @@ function! NVimrcLoadPlugins()
   Plug 'airblade/vim-gitgutter'
 
   " list, select and switch between buffers
-  " Plug 'jeetsukumaran/vim-buffergator'
+  Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
   let g:buftabline_numbers = 1
@@ -41,6 +41,7 @@ function! NVimrcLoadPlugins()
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
   Plug 'milkypostman/vim-togglelist'
+  Plug 'bronson/vim-trailing-whitespace'
 
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -163,7 +164,7 @@ function! NVimrcLoadMappings()
   inoremap <leader><leader> <esc>
   nnoremap <leader>k :bnext<CR>
   nnoremap <leader>j :bprevious<CR>
-  " nnoremap ;b :Bufferlist<CR>
+  nnoremap ;b :Bufferlist<CR>
   nnoremap ;c :BD<CR>
   nnoremap <F9> :update<CR>:Neomake<CR>
   nnoremap <F3> :update<cr><esc>

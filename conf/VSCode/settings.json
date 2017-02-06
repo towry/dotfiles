@@ -32,7 +32,9 @@
 // other
 	"window.titleBarStyle": "native",
 	"files.trimTrailingWhitespace": true,
-	"vimStyle.defaultMode": "insert",
-	"vimStyle.imapEsc": ",,",
-	"vimStyle.changeCursorStyle": false
+	"vsicons.projectDetection.autoReload": true,
+	"update.channel": "none"
+	// "vimStyle.defaultMode": "insert",
+	// "vimStyle.imapEsc": ",,",
+	// "vimStyle.changeCursorStyle": false
 }
