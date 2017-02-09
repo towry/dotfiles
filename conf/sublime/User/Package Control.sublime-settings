@@ -33,6 +33,7 @@
 		"SublimeLinter-pyflakes",
 		"Swift",
 		"TOML",
-		"TypeScript"
+		"TypeScript",
+		"Vue Syntax Highlight"
 	]
 }

@@ -43,6 +43,9 @@ function! NVimrcLoadPlugins()
   Plug 'milkypostman/vim-togglelist'
   Plug 'bronson/vim-trailing-whitespace'
 
+  Plug 'editorconfig/editorconfig-vim'
+  let g:EditorConfig_exclude_patterns = ['fugitive:/.*','scp://.*']
+
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   let g:NERDTreeIgnore = ['\.pyc$']
