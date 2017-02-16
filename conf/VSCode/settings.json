@@ -1,12 +1,12 @@
 // 将设置放入此文件中以覆盖默认设置
 {
 // editor config
-    "editor.fontFamily": "Monaco",
-    "editor.fontSize": 13,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.insertSpaces": false,
     "editor.rulers": [80],
-    "editor.renderWhitespace": true,
+	"editor.renderWhitespace": "all",
     "editor.renderIndentGuides": false,
     "editor.folding": true,
 	"editor.selectionHighlight": false,
@@ -33,8 +33,6 @@
 	"window.titleBarStyle": "native",
 	"files.trimTrailingWhitespace": true,
 	"vsicons.projectDetection.autoReload": true,
-	"update.channel": "none"
-	// "vimStyle.defaultMode": "insert",
-	// "vimStyle.imapEsc": ",,",
-	// "vimStyle.changeCursorStyle": false
+	"update.channel": "none",
+	"workbench.welcome.enabled": false
 }
