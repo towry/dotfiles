@@ -27,7 +27,7 @@ export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 DEF_NODE_VER="$(< ~/.nvm/alias/default)"
 DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin:$PATH"
 export GOPATH=/Users/towry/workspace/goenv
-export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:$GOPATH/bin:$HOME/.rvm/rubies/default/bin"
 export PATH="$DEF_NODE_BIN_PATH:$HOME/.cargo/bin:$PATH"
 
 # NVM

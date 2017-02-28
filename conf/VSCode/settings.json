@@ -34,5 +34,6 @@
 	"files.trimTrailingWhitespace": true,
 	"vsicons.projectDetection.autoReload": true,
 	"update.channel": "none",
-	"workbench.welcome.enabled": false
+	"workbench.welcome.enabled": false,
+	"vsicons.dontShowNewVersionMessage": true
 }
