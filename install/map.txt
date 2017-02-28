@@ -6,5 +6,5 @@
 .gitconfig
 .profile
 .zshenv
-.zshrc
 .config/nvim
+.inputrc
