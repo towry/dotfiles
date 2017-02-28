@@ -20,4 +20,4 @@ swiftenv() {
 	fi
 }
 
-source ~/.dotfiles/source/my_zshrc
+source ~/.dotfiles/source/my_zshrc.sh

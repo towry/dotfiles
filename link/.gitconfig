@@ -8,7 +8,7 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
 	hist = log --graph --full-history --all --pretty=format:'%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
 	rp = pull --rebase
-	pu = push -u 
+	clone1 = clone --depth=1
   rb = rebase
   rbc = rebase --continue
 [user]
