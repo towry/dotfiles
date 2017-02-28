@@ -6,6 +6,7 @@ alias pydeact="pyenv deactivate"
 alias s="subl"
 # alias n="gnvim"
 alias m="mvim"
+
 alias gac='echo "$(tput bold)$(tput setaf 3)warning: be carefull\033[0m" && git add . && git commit'
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
