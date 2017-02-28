@@ -7,7 +7,7 @@ alias s="subl"
 # alias n="gnvim"
 alias m="mvim"
 
-alias gac='echo "$(tput bold)$(tput setaf 3)warning: be carefull\033[0m" && git add . && git commit'
+alias gac='echo "$(tput bold)$(tput setaf 3)warning: be carefull$(tput sgr0)" && git add . && git commit'
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
 alias g="git"
