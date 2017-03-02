@@ -8,3 +8,4 @@
 .zshenv
 .config/nvim
 .inputrc
+.zshrc

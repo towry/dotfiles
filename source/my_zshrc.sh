@@ -36,6 +36,26 @@ loadnvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 }
 
+export PATH="/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:/Users/towry/.pyenv/shims:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/git/bin:/usr/local/sbin:/Users/towry/.nvm/versions/node/v0.12.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:$PATH"
+# >>> Sources
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# [[ -s "/Users/towry/.gvm/scripts/gvm" ]] && source "/Users/towry/.gvm/scripts/gvm"
+
+### Added by the Heroku Toolbelt
+# export PATH="/usr/local/heroku/bin:$PATH"
+
+if [[ -d $HOME/.pyenv ]];then
+	eval "$(pyenv init -)"
+	eval "$(pyenv virtualenv-init -)"
+fi
+
+swiftenv() {
+	if which swiftenv > /dev/null;then
+		eval "$(swiftenv init -)";
+	fi
+}
+
 # >>> Exports
 # PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
 # export PATH
@@ -53,10 +73,8 @@ export PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export VISUAL=vim
-export EDITOR="$VISUAL"
 # autojump
-# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 
 # >>> source
@@ -67,16 +85,3 @@ source ~/.dotfiles/vendor/z/z.sh
 if [ -f ./private.sh ]; then
 	source ./private.sh
 fi
-
-# http://henrik.nyh.se/2008/12/git-dirty-prompt
-# http://www.simplisticcomplexity.com/2008/03/13/show-your-git-branch-name-in-your-prompt/
-#   username@Machine ~/dev/dir[master]$   # clean working directory
-#   username@Machine ~/dev/dir[master*]$  # dirty working directory
-
-function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working directory clean" ]] && echo "*"
-}
-function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/(\1$(parse_git_dirty))/"
-}
-export PS1='\[\033[01;32m\]\u\[\033[00m\]:\[\033[1;33m\]\w\[\033[0m\]$(parse_git_branch)$ '
