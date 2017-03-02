@@ -1,12 +1,6 @@
 #!/usr/bin/bash
 
-# Quick set terminal title
-function _title {
-	printf "\033]0;%s\007" "$1"
-}
-
 # Git
-export PATH=/usr/local/git/bin:/usr/local/sbin:$PATH
 
 function xtree() {
   find . -print | grep -v .git | sed -e 's;[^/]*/;|____;g;s;____|; |;g' | less
@@ -17,9 +11,9 @@ function xbn() {
 }
 
 function xpush() {
-  local a=$1 
+  local a=$1
   if [ -z "$1" ]
-  then 
+  then
     a='origin'
   fi
   echo "git push -u $a `xbn`"
@@ -48,8 +42,3 @@ function xpr() {
   sleep 1
   git pull --rebase $a `xbn`
 }
-
-function xgedit() {
-  subl `echo $1 | awk '{print $NF}'`
-}
-

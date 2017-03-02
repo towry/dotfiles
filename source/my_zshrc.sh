@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+export DOTFILES="$HOME/.dotfiles"
+
 alias cls="clear"
 alias pyact="pyenv activate"
 alias pydeact="pyenv deactivate"
@@ -16,19 +18,28 @@ if type nvim > /dev/null; then
 fi
 alias rm="echo Use 'del', or the full path i.e. '/bin/rm'"
 
-# >>> Version managers
+#>>>>> PATH <<<<<<
+DEF_NODE_VER="$(< ~/.nvm/alias/default)"
+DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
+export GOPATH=/Users/towry/workspace/goenv
+PATH="/usr/local/opt/openssl/bin\
+:/Library/Frameworks/Python.framework/Versions/3.4/bin\
+:/Users/towry/.pyenv/shims:/usr/local/go/bin\
+:/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin\
+:/usr/local/git/bin\
+:/usr/local/sbin\
+:$GOPATH/bin\
+:$DEF_NODE_BIN_PATH\
+:$HOME/.cargo/bin\
+:$PATH"
+export PATH
+#<<<<< PATH >>>>>>
 
+# >>> Version managers
 # PYENV
 # Setting PATH for Python 3.4
 # The orginal version is saved in .bash_profile.pysave
-export PATH="/Users/towry/.multirust/toolchains/stable/cargo/bin:/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
 export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
-
-DEF_NODE_VER="$(< ~/.nvm/alias/default)"
-DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin:$PATH"
-export GOPATH=/Users/towry/workspace/goenv
-export PATH="$PATH:$GOPATH/bin:$HOME/.rvm/rubies/default/bin"
-export PATH="$DEF_NODE_BIN_PATH:$HOME/.cargo/bin:$PATH"
 
 # NVM
 export NVM_DIR="/Users/towry/.nvm"
@@ -36,10 +47,7 @@ loadnvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 }
 
-export PATH="/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin:$PATH"
-export PATH="/usr/local/opt/openssl/bin:/Users/towry/.pyenv/shims:/Library/Frameworks/Python.framework/Versions/3.4/bin:/usr/local/git/bin:/usr/local/sbin:/Users/towry/.nvm/versions/node/v0.12.4/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/go/bin:/usr/local/MacGPG2/bin:$PATH"
 # >>> Sources
-# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # [[ -s "/Users/towry/.gvm/scripts/gvm" ]] && source "/Users/towry/.gvm/scripts/gvm"
 
 ### Added by the Heroku Toolbelt
@@ -74,7 +82,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 # autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
 
 # >>> source
