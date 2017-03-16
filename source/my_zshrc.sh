@@ -89,7 +89,3 @@ export LANG=en_US.UTF-8
 source ~/.dotfiles/source/shutils
 source ~/.dotfiles/vendor/z/z.sh
 # <<<
-
-if [ -f ./private.sh ]; then
-	source ./private.sh
-fi

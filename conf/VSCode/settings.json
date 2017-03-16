@@ -33,7 +33,11 @@
 	"window.titleBarStyle": "native",
 	"files.trimTrailingWhitespace": true,
 	"vsicons.projectDetection.autoReload": true,
-	"update.channel": "none",
 	"workbench.welcome.enabled": false,
-	"vsicons.dontShowNewVersionMessage": true
+	"vsicons.dontShowNewVersionMessage": true,
+	"files.associations": {
+        "*.vue": "vue"
+	},
+	"workbench.colorTheme": "Gruvbox Dark (Medium Contrast)",
+	"workbench.iconTheme": "vs-seti"
 }

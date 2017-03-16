@@ -10,3 +10,4 @@ link/.config/*
 node_modules/
 .atom/packages/
 source/private.sh
+conf/VSCode/*.backup
