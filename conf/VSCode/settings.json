@@ -39,5 +39,25 @@
         "*.vue": "vue"
 	},
 	"workbench.colorTheme": "Gruvbox Dark (Medium Contrast)",
-	"workbench.iconTheme": "vs-seti"
+	"workbench.iconTheme": "vs-seti",
+
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [",", ","],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.otherModesKeyBindingsNonRecursive": [
+        {
+            "before": [":"],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.showCommands",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "vim.useCtrlKeys": true
 }

@@ -42,7 +42,7 @@ function! NVimrcLoadPlugins()
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
   Plug 'milkypostman/vim-togglelist'
   Plug 'bronson/vim-trailing-whitespace'
-  Plug 'posva/vim-vue'
+  Plug 'HerringtonDarkholme/yats.vim'
 
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
