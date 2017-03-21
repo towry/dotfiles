@@ -59,5 +59,6 @@
             ]
         }
     ],
-    "vim.useCtrlKeys": true
+    "vim.useCtrlKeys": true,
+    "vim.startInInsertMode": true
 }
