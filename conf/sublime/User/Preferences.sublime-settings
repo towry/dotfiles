@@ -17,7 +17,11 @@
 		"*.zip",
 		"*.out",
 		"*.mp4",
-		"*.mp3"
+		"*.mp3",
+		"node_modules/",
+		"dist/",
+		"build/",
+		"tmp/"
 	],
 	"color_scheme": "Packages/User/SublimeLinter/gruvbox (SL).tmTheme",
 	"default_line_ending": "unix",
@@ -30,12 +34,11 @@
 		"CVS",
 		"dest",
 		"dist",
-		"build",
 		"tmp",
 		"temp",
 		".webpack_cache/",
-		"bower_components/",
-		"node_modules/"
+		"node_modules/",
+		"bower_components/"
 	],
 	"font_face": "Monaco",
 	"font_size": 13,
@@ -49,10 +52,7 @@
 	[
 		"*.log",
 		"node_modules/",
-		"bower_components/",
-		"build/",
-		"dist/",
-		"tmp/"
+		"bower_components/"
 	],
 	"piatto_folder_icons": false,
 	"rulers":

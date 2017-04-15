@@ -16,7 +16,6 @@ alias g="git"
 if type nvim > /dev/null; then
 	alias vi="nvim"
 fi
-alias rm="echo Use 'del', or the full path i.e. '/bin/rm'"
 
 #>>>>> PATH <<<<<<
 DEF_NODE_VER="$(< ~/.nvm/alias/default)"

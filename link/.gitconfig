@@ -11,6 +11,7 @@
 	clone1 = clone --depth=1
   rb = rebase
   rbc = rebase --continue
+	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [user]
 	name = towry
 	email = tovvry@gmail.com

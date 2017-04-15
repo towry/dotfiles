@@ -26,7 +26,8 @@
         "**/build": true,
 		"**/dest": true,
         "**/.webpack_cache": true,
-        "**/temp": true
+        "**/temp": true,
+        "**/docs/qxfe": true
     },
 
 // other
@@ -37,28 +38,20 @@
 	"vsicons.dontShowNewVersionMessage": true,
 	"files.associations": {
         "*.vue": "vue"
-	},
-	"workbench.colorTheme": "Gruvbox Dark (Medium Contrast)",
+    },
 	"workbench.iconTheme": "vs-seti",
 
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [",", ","],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.otherModesKeyBindingsNonRecursive": [
-        {
-            "before": [":"],
-            "after": [],
-            "commands": [
-                {
-                    "command": "workbench.action.showCommands",
-                    "args": []
-                }
-            ]
-        }
-    ],
-    "vim.useCtrlKeys": true,
-    "vim.startInInsertMode": true
+    "vimStyle.changeCursorStyle": true,
+    "vimStyle.imapEsc": ",,",
+    "workbench.activityBar.visible": true,
+    "typescript.check.tscVersion": false,
+    "markdown-pdf.outputDirectory": "/Users/towry/Downloads",
+    "workbench.colorTheme": "Monokai Dark Soda",
+    "editor.cursorStyle": "line",
+    "editor.minimap.enabled": true,
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": false,
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "explorer.enableDragAndDrop": false,
+    "search.useIgnoreFilesByDefault": true
 }
