@@ -3,14 +3,11 @@
 	ci = commit
 	st = status
 	br = branch
-	type = cat-file -t
 	dump = cat-file -p
 	lg = log --graph --pretty=format:'%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
 	hist = log --graph --full-history --all --pretty=format:'%Cred%h%Creset %ad %s %C(yellow)%d%Creset %C(bold blue)<%an>%Creset' --date=short
 	rp = pull --rebase
 	clone1 = clone --depth=1
-  rb = rebase
-  rbc = rebase --continue
 	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
 [user]
 	name = towry

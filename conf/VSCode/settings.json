@@ -41,17 +41,21 @@
     },
 	"workbench.iconTheme": "vs-seti",
 
-    "vimStyle.changeCursorStyle": true,
-    "vimStyle.imapEsc": ",,",
     "workbench.activityBar.visible": true,
     "typescript.check.tscVersion": false,
     "markdown-pdf.outputDirectory": "/Users/towry/Downloads",
-    "workbench.colorTheme": "Monokai Dark Soda",
     "editor.cursorStyle": "line",
-    "editor.minimap.enabled": true,
+    "editor.minimap.enabled": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": false,
+    "editor.acceptSuggestionOnEnter": true,
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "explorer.enableDragAndDrop": false,
-    "search.useIgnoreFilesByDefault": true
+    "search.useIgnoreFilesByDefault": true,
+    "workbench.colorTheme": "Gruvbox Dark (Medium Contrast)",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [",", ","],
+            "after": ["<Esc>"]
+        }
+    ]
 }
