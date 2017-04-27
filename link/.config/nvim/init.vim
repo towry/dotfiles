@@ -43,6 +43,7 @@ function! NVimrcLoadPlugins()
   Plug 'milkypostman/vim-togglelist'
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'posva/vim-vue'
 
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
