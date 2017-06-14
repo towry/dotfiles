@@ -1,7 +1,7 @@
 // 将设置放入此文件中以覆盖默认设置
 {
 // editor config
-    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.insertSpaces": false,
@@ -9,7 +9,7 @@
 	"editor.renderWhitespace": "all",
     "editor.renderIndentGuides": false,
     "editor.folding": true,
-	"editor.selectionHighlight": false,
+	"editor.selectionHighlight": true,
 
 // projects
     "files.exclude": {
@@ -39,7 +39,7 @@
 	"files.associations": {
         "*.vue": "vue"
     },
-	"workbench.iconTheme": "vs-seti",
+    "workbench.iconTheme": "vs-seti",
 
     "workbench.activityBar.visible": true,
     "typescript.check.tscVersion": false,
@@ -51,12 +51,22 @@
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "explorer.enableDragAndDrop": false,
     "search.useIgnoreFilesByDefault": true,
-    "workbench.colorTheme": "Gruvbox Dark (Medium Contrast)",
+    "workbench.colorTheme": "Visual Gruvbox (Medium Dark)",
     "vim.insertModeKeyBindings": [
         {
             "before": [",", ","],
             "after": ["<Esc>"]
         }
     ],
-    "editor.lineNumbers": "relative"
+    "editor.lineNumbers": "relative",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.quickSuggestionsDelay": 20,
+    "files.insertFinalNewline": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "extensions.autoUpdate": true,
+    "vim.disableAnnoyingGcMessage": true
 }

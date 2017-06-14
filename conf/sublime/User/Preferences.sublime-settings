@@ -19,7 +19,7 @@
 		"*.mp4",
 		"*.mp3",
 		"node_modules/",
-		"dist/",
+		"dist/*/*.*",
 		"build/",
 		"tmp/"
 	],
@@ -36,8 +36,8 @@
 		"dist",
 		"tmp",
 		"temp",
-		".webpack_cache/",
 		"node_modules/",
+		".webpack_cache/",
 		"bower_components/"
 	],
 	"font_face": "Monaco",
