@@ -1,7 +1,7 @@
 // 将设置放入此文件中以覆盖默认设置
 {
 // editor config
-    "editor.fontFamily": "Input, Monaco, Menlo, 'Courier New', monospace",
+    "editor.fontFamily": "Monaco, Menlo, 'Courier New', monospace",
     "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.insertSpaces": false,
@@ -32,26 +32,23 @@
 
 // other
 	"window.titleBarStyle": "native",
-	"files.trimTrailingWhitespace": true,
+    "files.trimTrailingWhitespace": true,
 	"vsicons.projectDetection.autoReload": true,
 	"workbench.welcome.enabled": false,
 	"vsicons.dontShowNewVersionMessage": true,
-	"files.associations": {
-        "*.vue": "vue"
-    },
+    "files.associations": {},
     "workbench.iconTheme": "vs-seti",
-
     "workbench.activityBar.visible": true,
     "typescript.check.tscVersion": false,
     "markdown-pdf.outputDirectory": "/Users/towry/Downloads",
     "editor.cursorStyle": "line",
     "editor.minimap.enabled": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": true,
+    "editor.acceptSuggestionOnEnter": "smart",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "explorer.enableDragAndDrop": false,
     "search.useIgnoreFilesByDefault": true,
-    "workbench.colorTheme": "Visual Gruvbox (Medium Dark)",
+    "workbench.colorTheme": "Gruvbox Dark (Medium Contrast)",
     "vim.insertModeKeyBindings": [
         {
             "before": [",", ","],
@@ -68,5 +65,20 @@
     "files.insertFinalNewline": true,
     "vim.disableAnnoyingNeovimMessage": true,
     "extensions.autoUpdate": true,
-    "vim.disableAnnoyingGcMessage": true
+    "vim.disableAnnoyingGcMessage": true,
+    "workbench.sideBar.location": "left",
+    "editor.lineHeight": 20,
+    "editor.roundedSelection": false,
+    "editor.find.seedSearchStringFromSelection": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.dragAndDrop": false,
+    "editor.accessibilitySupport": "off",
+    "workbench.editor.showTabs": true,
+    "workbench.editor.showIcons": true,
+    "workbench.editor.enablePreview": false,
+    "window.nativeTabs": true,
+    "explorer.openEditors.visible": 10,
+    "explorer.openEditors.dynamicHeight": true,
+    "workbench.editor.openPositioning": "last"
 }
