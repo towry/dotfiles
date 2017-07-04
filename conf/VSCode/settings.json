@@ -36,7 +36,9 @@
 	"vsicons.projectDetection.autoReload": true,
 	"workbench.welcome.enabled": false,
 	"vsicons.dontShowNewVersionMessage": true,
-    "files.associations": {},
+    "files.associations": {
+        "*.swift.gyb": "swift"
+    },
     "workbench.iconTheme": "vs-seti",
     "workbench.activityBar.visible": true,
     "typescript.check.tscVersion": false,
@@ -44,7 +46,7 @@
     "editor.cursorStyle": "line",
     "editor.minimap.enabled": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "smart",
+    "editor.acceptSuggestionOnEnter": "on",
     "window.title": "${activeEditorMedium}${separator}${rootName}",
     "explorer.enableDragAndDrop": false,
     "search.useIgnoreFilesByDefault": true,
@@ -78,7 +80,7 @@
     "workbench.editor.showIcons": true,
     "workbench.editor.enablePreview": false,
     "window.nativeTabs": true,
-    "explorer.openEditors.visible": 10,
+    "explorer.openEditors.visible": 0,
     "explorer.openEditors.dynamicHeight": true,
-    "workbench.editor.openPositioning": "last"
+    "workbench.editor.openPositioning": "right"
 }
