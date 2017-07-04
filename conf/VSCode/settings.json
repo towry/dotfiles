@@ -82,5 +82,6 @@
     "window.nativeTabs": true,
     "explorer.openEditors.visible": 0,
     "explorer.openEditors.dynamicHeight": true,
-    "workbench.editor.openPositioning": "right"
+    "workbench.editor.openPositioning": "right",
+    "swiftlint.enable": true
 }
