@@ -8,6 +8,7 @@ alias pydeact="pyenv deactivate"
 alias s="subl"
 # alias n="gnvim"
 alias m="mvim"
+alias runswift="xcrun swift"
 
 alias gac='echo "$(tput bold)$(tput setaf 3)warning: be carefull$(tput sgr0)" && git add . && git commit'
 alias gtail="git rev-list --all | tail"
@@ -24,7 +25,7 @@ DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
 export GOPATH=/Users/towry/workspace/goenv
 
 export PATH="/usr/local/opt/openssl/bin\
-:$HOME/.swiftenv/bin\
+:$HOME/.swiftenv/shims\
 :/Library/Frameworks/Python.framework/Versions/3.4/bin\
 :/usr/local/go/bin\
 :/usr/local/git/bin\
