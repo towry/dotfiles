@@ -20,18 +20,20 @@ fi
 #>>>>> PATH <<<<<<
 DEF_NODE_VER="$(< ~/.nvm/alias/default)"
 DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
+
 export GOPATH=/Users/towry/workspace/goenv
-PATH="/usr/local/opt/openssl/bin\
+
+export PATH="/usr/local/opt/openssl/bin\
+:$HOME/.swiftenv/bin\
 :/Library/Frameworks/Python.framework/Versions/3.4/bin\
-:/Users/towry/.pyenv/shims:/usr/local/go/bin\
-:/Library/Developer/Toolchains/swift-latest.xctoolchain/usr/bin\
+:/usr/local/go/bin\
 :/usr/local/git/bin\
 :/usr/local/sbin\
 :$GOPATH/bin\
 :$DEF_NODE_BIN_PATH\
-:$HOME/.cargo/bin\
-:$PATH"
-export PATH
+:$HOME/.cargo/bin:$PATH"
+
+# export PATH
 #<<<<< PATH >>>>>>
 
 # >>> Version managers
@@ -70,9 +72,9 @@ load_swiftenv() {
 
 # eval "$(docker-machine env default)"
 
-loadrsvm() {
-	[[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
-}
+# loadrsvm() {
+# 	[[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
+# }
 
 # source ~/.gvm/scripts/gvm
 export PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
