@@ -24,7 +24,6 @@ DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
 export GOPATH=/Users/towry/workspace/goenv
 
 export PATH="/usr/local/opt/openssl/bin\
-:$HOME/.swiftenv/shims\
 :/Library/Frameworks/Python.framework/Versions/3.4/bin\
 :/usr/local/go/bin\
 :/usr/local/git/bin\
@@ -64,6 +63,7 @@ load_swiftenv() {
 		eval "$(swiftenv init -)";
 	fi
 }
+load_swiftenv
 
 # >>> Exports
 # PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
