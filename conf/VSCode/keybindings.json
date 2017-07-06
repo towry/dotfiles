@@ -2,5 +2,22 @@
 [
 	{ "key": "cmd+f2", 		"command": "bookmarks.toggle" },
 	{ "key": "f2", 			"command": "bookmarks.jumpToNext" },
-	{ "key": "cmd+f3",		"command": "workbench.action.files.saveAll" }
+	{
+		"key": "cmd+f3",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+,",
+		"command": "workbench.action.openNextRecentlyUsedEditorInGroup"
+	},
+	{
+		"key": "ctrl+j",
+		"command": "workbench.action.quickOpenSelectNext",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+k",
+		"command": "workbench.action.quickOpenSelectPrevious",
+		"when": "inQuickOpen"
+	}
 ]

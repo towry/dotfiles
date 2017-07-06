@@ -94,8 +94,8 @@
         "insert": "#14884C"
     },
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.background": "#14884C",
+        "statusBar.noFolderBackground": "#14884C",
+        "statusBar.debuggingBackground": "#14884C"
     }
 }
