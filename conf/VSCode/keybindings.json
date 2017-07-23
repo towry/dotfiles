@@ -11,13 +11,8 @@
 		"command": "workbench.action.openNextRecentlyUsedEditorInGroup"
 	},
 	{
-		"key": "ctrl+j",
+		"key": "ctrl+,",
 		"command": "workbench.action.quickOpenSelectNext",
-		"when": "inQuickOpen"
-	},
-	{
-		"key": "ctrl+k",
-		"command": "workbench.action.quickOpenSelectPrevious",
 		"when": "inQuickOpen"
 	}
 ]

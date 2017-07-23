@@ -37,9 +37,9 @@
 	"workbench.welcome.enabled": false,
 	"vsicons.dontShowNewVersionMessage": true,
     "files.associations": {
-        "*.swift.gyb": "swift"
+        "*.swift.gyb": "swift",
+        "*.wxss": "css"
     },
-    "workbench.iconTheme": "vs-seti",
     "workbench.activityBar.visible": true,
     "typescript.check.tscVersion": false,
     "markdown-pdf.outputDirectory": "/Users/towry/Downloads",
@@ -47,10 +47,9 @@
     "editor.minimap.enabled": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "on",
-    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "window.title": "${activeEditorLong} - ${rootName}",
     "explorer.enableDragAndDrop": false,
     "search.useIgnoreFilesByDefault": true,
-    "workbench.colorTheme": "Gruvbox Dark (Medium Contrast)",
     "editor.lineNumbers": "relative",
     "editor.quickSuggestions": {
         "other": true,
@@ -97,5 +96,12 @@
         "statusBar.background": "#14884C",
         "statusBar.noFolderBackground": "#14884C",
         "statusBar.debuggingBackground": "#14884C"
-    }
+    },
+    "vim.useCtrlKeys": false,
+    "[swift]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "extensions.ignoreRecommendations": false,
+    "workbench.colorTheme": "Gruvbox Dark (Soft)"
 }

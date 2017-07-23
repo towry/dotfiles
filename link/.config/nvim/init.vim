@@ -109,6 +109,14 @@ function! NVimrcAutoSettings()
       \   nnoremap <buffer> <silent> <leader>ff :call Uncrustify('c')<cr>
       \ | setl commentstring=//%s
 
+    " Ruby
+    au FileType ruby
+      \   setl tabstop=2
+      \ | setl shiftwidth=2
+      \ | setl shiftround
+      \ | set expandtab
+      \ | set backspace=2
+
     " Python
     au FileType python
       \   setl softtabstop=4
