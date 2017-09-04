@@ -234,10 +234,11 @@ function! NVimrcLoadSettings()
   set relativenumber " shows relative line numbers for easy motions
   set colorcolumn=80
 
-  set softtabstop=4
-  set tabstop=4
-  set shiftwidth=4
-  set noexpandtab " expand tabs into spaces
+  set softtabstop=2
+  set tabstop=2
+  set shiftwidth=2
+  " set noexpandtab " expand tabs into spaces
+  set expandtab
 
   set ignorecase " ignore case when searching
   set smartcase " disable 'ignorecase' if search pattern has uppercase characters

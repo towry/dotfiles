@@ -16,8 +16,7 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.DS_Store": true,
-		"**/*.pyc": true,
-        "**/.webpack_cache": true
+		"**/*.pyc": true
     },
     "search.exclude": {
         "**/node_modules": true,
@@ -25,16 +24,15 @@
         "**/tmp": true,
         "**/build": true,
 		"**/dest": true,
-        "**/.webpack_cache": true,
         "**/temp": true,
-        "**/docs/qxfe": true
+        "**/docs/qxfe": true,
+        "**/.fscache": true
     },
 
 // other
 	"window.titleBarStyle": "native",
     "files.trimTrailingWhitespace": true,
 	"vsicons.projectDetection.autoReload": true,
-	"workbench.welcome.enabled": false,
 	"vsicons.dontShowNewVersionMessage": true,
     "files.associations": {
         "*.swift.gyb": "swift",
@@ -50,7 +48,7 @@
     "window.title": "${activeEditorLong} - ${rootName}",
     "explorer.enableDragAndDrop": false,
     "search.useIgnoreFilesByDefault": true,
-    "editor.lineNumbers": "relative",
+    "editor.lineNumbers": "on",
     "editor.quickSuggestions": {
         "other": true,
         "comments": true,
@@ -93,17 +91,27 @@
         "insert": "#14884C"
     },
     "workbench.colorCustomizations": {
-        "statusBar.background": "#14884C",
-        "statusBar.noFolderBackground": "#14884C",
-        "statusBar.debuggingBackground": "#14884C"
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
     },
     "vim.useCtrlKeys": false,
     "extensions.ignoreRecommendations": false,
     "workbench.colorTheme": "Gruvbox Dark (Soft)",
     "editor.trimAutoWhitespace": true,
-    "editor.tabSize": 4,
+    "editor.tabSize": 2,
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.quickSuggestions": false
+    },
+    "vetur.validation.template": false,
+    "vetur.validation.style": false,
+    "workbench.startupEditor": "none",
+    "editor.detectIndentation": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.fscache/**": true
     }
 }
