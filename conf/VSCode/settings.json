@@ -26,7 +26,7 @@
 		"**/dest": true,
         "**/temp": true,
         "**/docs/qxfe": true,
-        "**/.fscache": true
+        "**/.fscache/**": true
     },
 
 // other
@@ -95,7 +95,7 @@
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
     },
-    "vim.useCtrlKeys": false,
+    "vim.useCtrlKeys": true,
     "extensions.ignoreRecommendations": false,
     "workbench.colorTheme": "Gruvbox Dark (Soft)",
     "editor.trimAutoWhitespace": true,

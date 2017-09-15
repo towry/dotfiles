@@ -21,10 +21,18 @@
 		"node_modules/",
 		"dist/*/*.*",
 		"build/",
-		"tmp/"
+		"tmp/",
+		"public/",
+		"temp/"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/gruvbox (SL).tmTheme",
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"caret_extra_width": 2,
+	"caret_style": "solid",
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
 	"default_line_ending": "unix",
+	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
 	"folder_exclude_patterns":
 	[
@@ -33,27 +41,26 @@
 		".hg",
 		"CVS",
 		"dest",
-		"dist",
-		"tmp",
-		"temp",
-		"node_modules/",
 		".webpack_cache/",
-		"bower_components/"
+		"bower_components/",
+		".fscache",
+		".vscode"
 	],
 	"font_face": "Monaco",
 	"font_size": 14,
 	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"index_exclude_patterns":
 	[
 		"*.log",
 		".vscode",
 		"node_modules/",
-		"bower_components/"
+		"bower_components/",
+		"dist/"
 	],
 	"piatto_folder_icons": false,
 	"rulers":
@@ -68,6 +75,7 @@
 	"show_full_path": true,
 	"show_tab_close_buttons": true,
 	"tab_size": 2,
+	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": false,
