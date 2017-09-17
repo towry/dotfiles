@@ -81,5 +81,6 @@
 	"vintage_start_in_command_mode": false,
 	"vintageous_enable_cmdline_mode": false,
 	"word_wrap": false,
-	"wrap_width": 80
+	"wrap_width": 80,
+	"vintage_start_in_command_mode": true
 }
