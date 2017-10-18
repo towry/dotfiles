@@ -11,7 +11,6 @@
 		"Codecs33",
 		"Color Highlighter",
 		"ConvertToUTF8",
-		"DocBlockr",
 		"EditorConfig",
 		"ES6-Toolkit",
 		"ExtendedTabSwitcher",
@@ -37,6 +36,7 @@
 		"Swift",
 		"TOML",
 		"TypeScript",
+		"TypeScript Syntax",
 		"Vue Syntax Highlight"
 	]
 }

@@ -6,7 +6,7 @@
     "editor.fontLigatures": true,
     "editor.insertSpaces": true,
     "editor.rulers": [80],
-	"editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "all",
     "editor.renderIndentGuides": false,
     "editor.folding": true,
 	"editor.selectionHighlight": true,
@@ -16,21 +16,21 @@
         "**/.git": true,
         "**/.svn": true,
         "**/.DS_Store": true,
-		"**/*.pyc": true
+        "**/*.pyc": true
     },
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
         "**/tmp": true,
         "**/build": true,
-		"**/dest": true,
+        "**/dest": true,
         "**/temp": true,
         "**/docs/qxfe": true,
         "**/.fscache/**": true
     },
 
 // other
-	"window.titleBarStyle": "native",
+    "window.titleBarStyle": "custom",
     "files.trimTrailingWhitespace": true,
 	"vsicons.projectDetection.autoReload": true,
 	"vsicons.dontShowNewVersionMessage": true,
@@ -40,7 +40,7 @@
     },
     "workbench.activityBar.visible": true,
     "typescript.check.tscVersion": false,
-    "markdown-pdf.outputDirectory": "/Users/towry/Downloads",
+    // "markdown-pdf.outputDirectory": "/Users/towry/Downloads",
     "editor.cursorStyle": "line",
     "editor.minimap.enabled": false,
     "editor.acceptSuggestionOnCommitCharacter": false,
@@ -51,7 +51,7 @@
     "editor.lineNumbers": "on",
     "editor.quickSuggestions": {
         "other": true,
-        "comments": true,
+        "comments": false,
         "strings": true
     },
     "editor.quickSuggestionsDelay": 20,
@@ -72,31 +72,31 @@
     "explorer.openEditors.visible": 0,
     "explorer.openEditors.dynamicHeight": true,
     "workbench.editor.openPositioning": "right",
-    "swiftlint.enable": true,
-    // vim settings
-    "vim.leader": "\\",
-    "vim.startInInsertMode": true,
-    "vim.statusBarColorControl": true,
-    "vim.enableNeovim": true,
-    "vim.disableAnnoyingNeovimMessage": true,
-    "vim.timeout": 300,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [",", ","],
-            "after": ["<Esc>"]
-        }
-    ],
-    "vim.statusBarColors" : {
-        "normal": "#005f5f",
-        "insert": "#14884C"
-    },
+    // "swiftlint.enable": true,
+    // // vim settings
+    // "vim.leader": "\\",
+    // "vim.startInInsertMode": true,
+    // "vim.statusBarColorControl": true,
+    // "vim.enableNeovim": true,
+    // "vim.disableAnnoyingNeovimMessage": true,
+    // "vim.timeout": 300,
+    // "vim.insertModeKeyBindings": [
+    //     {
+    //         "before": [",", ","],
+    //         "after": ["<Esc>"]
+    //     }
+    // ],
+    // "vim.statusBarColors" : {
+    //     "normal": "#005f5f",
+    //     "insert": "#14884C"
+    // },
     "workbench.colorCustomizations": {
-        "statusBar.background": "#005f5f",
-        "statusBar.noFolderBackground": "#005f5f",
-        "statusBar.debuggingBackground": "#005f5f"
+        "statusBar.background": "#c71568",
+        "statusBar.noFolderBackground": "#0a6996",
+        "statusBar.debuggingBackground": "#0aa07b"
     },
-    "vim.useCtrlKeys": true,
-    "extensions.ignoreRecommendations": false,
+    // "vim.useCtrlKeys": true,
+    "extensions.ignoreRecommendations": true,
     "workbench.colorTheme": "Gruvbox Dark (Soft)",
     "editor.trimAutoWhitespace": true,
     "editor.tabSize": 2,
@@ -104,8 +104,8 @@
         "editor.wordWrap": "wordWrapColumn",
         "editor.quickSuggestions": false
     },
-    "vetur.validation.template": false,
-    "vetur.validation.style": false,
+    // "vetur.validation.template": false,
+    // "vetur.validation.style": false,
     "workbench.startupEditor": "none",
     "editor.detectIndentation": true,
     "files.watcherExclude": {

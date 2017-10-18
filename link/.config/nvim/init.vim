@@ -45,6 +45,8 @@ function! NVimrcLoadPlugins()
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'posva/vim-vue'
 
+  Plug 'editorconfig/editorconfig-vim'
+
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   let g:NERDTreeIgnore = ['\.pyc$']

@@ -53,6 +53,7 @@
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
+		"Vintage"
 	],
 	"index_exclude_patterns":
 	[
@@ -78,9 +79,8 @@
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": false,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": false,
+	"vintage_start_in_command_mode": true,
 	"vintageous_enable_cmdline_mode": false,
 	"word_wrap": false,
-	"wrap_width": 80,
-	"vintage_start_in_command_mode": true
+	"wrap_width": 80
 }
