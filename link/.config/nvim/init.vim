@@ -44,28 +44,31 @@ function! NVimrcLoadPlugins()
   Plug 'bronson/vim-trailing-whitespace'
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'posva/vim-vue'
-
   Plug 'editorconfig/editorconfig-vim'
+
+  " fzf search
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
 
   " === NERDTree
   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   let g:NERDTreeIgnore = ['\.pyc$']
 
   " === CtrlP
-  Plug 'ctrlpvim/ctrlp.vim'
-  let g:ctrlp_map = ';p'
-  let g:ctrl_cmd = ';p'
-  if !g:is_windows
-    set wildignore+=target/debug/*,tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
-  else
-    set wildignore+=\\tmp\\*,*.swp,*.zip,*.exe " Windows
-  endif
-  " let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-  let g:ctrlp_custom_ignore = {
-    \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|build/|dist/|dest/|temp/|target/debug/|tmp/|docs/',
-    \ 'file': '\v\.(exe|so|dll|png|gif|jpeg|jpg|bmp|pyc)$',
-    \ 'link': '',
-    \ }
+  " Plug 'ctrlpvim/ctrlp.vim'
+  " let g:ctrlp_map = ';p'
+  " let g:ctrl_cmd = ';p'
+  " if !g:is_windows
+  "   set wildignore+=target/debug/*,tmp/*,*.so,*.swp,*.zip " MacOSX/Linux
+  " else
+  "   set wildignore+=\\tmp\\*,*.swp,*.zip,*.exe " Windows
+  " endif
+  " " let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+  " let g:ctrlp_custom_ignore = {
+  "   \ 'dir': '\v[\/]\.(git|hg|svn)|node_modules/|git_home/|bower_components/|vendor/|build/|dist/|dest/|temp/|target/debug/|tmp/|docs/',
+  "   \ 'file': '\v\.(exe|so|dll|png|gif|jpeg|jpg|bmp|pyc)$',
+  "   \ 'link': '',
+  "   \ }
 
   " === Neomake
   Plug 'benekastah/neomake'
@@ -90,6 +93,9 @@ function! NVimrcLoadPlugins()
   " nnoremap <leader>dg :diffget<cr>:diffupdate<cr>
   " vnoremap <leader>dg :diffget<cr>:diffupdate<cr>
   " Plug 'tpope/vim-fugitive'
+
+  " Other
+  let g:ackprg = 'ag --nogroup --nocolor --column'
 
   call plug#end()
 endfunction
@@ -186,6 +192,8 @@ function! NVimrcLoadMappings()
   nnoremap ;w <C-w>
   " visual search
   vnoremap // y/<C-R>"<CR>
+  " fzf search
+  nnoremap ;p :FZF<cr>
 
   " move text up/down
   " nnoremap <silent> <c-j> :m .+1<cr>==

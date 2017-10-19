@@ -86,3 +86,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source "$HOME/.dotfiles/source/my_zshrc.sh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
