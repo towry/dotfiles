@@ -51,11 +51,11 @@ function! NVimrcLoadPlugins()
 
 
   " === NERDTree
-  if !has("gui_vimr")
+  " if !has("gui_vimr")
     Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
     let g:NERDTreeIgnore = ['\.pyc$']
     nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
-  endif
+  " endif
 
   " === CtrlP
   " Plug 'ctrlpvim/ctrlp.vim'
