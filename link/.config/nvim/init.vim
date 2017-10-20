@@ -51,8 +51,11 @@ function! NVimrcLoadPlugins()
 
 
   " === NERDTree
-  Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
-  let g:NERDTreeIgnore = ['\.pyc$']
+  if !has("gui_vimr")
+    Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+    let g:NERDTreeIgnore = ['\.pyc$']
+    nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
+  endif
 
   " === CtrlP
   " Plug 'ctrlpvim/ctrlp.vim'
@@ -178,7 +181,6 @@ function! NVimrcLoadMappings()
   let g:mapleader = ","
 
   nmap <script> <silent> <F5> :call ToggleQuickfixList()<CR>
-  nnoremap ;n :call g:WorkaroundNERDTreeToggle()<CR>
   inoremap <leader><leader> <esc>
   nnoremap <leader>k :bnext<CR>
   nnoremap <leader>j :bprevious<CR>
