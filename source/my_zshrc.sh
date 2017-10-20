@@ -18,6 +18,8 @@ if type nvim > /dev/null; then
 	alias vi="nvim"
 fi
 
+export FZF_DEFAULT_COMMAND='ag -g ""'
+
 #>>>>> PATH <<<<<<
 DEF_NODE_VER="$(< ~/.nvm/alias/default)"
 DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
