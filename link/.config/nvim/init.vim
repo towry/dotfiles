@@ -45,6 +45,7 @@ function! NVimrcLoadPlugins()
   Plug 'HerringtonDarkholme/yats.vim'
   Plug 'posva/vim-vue'
   Plug 'editorconfig/editorconfig-vim'
+  Plug 'blueyed/vim-diminactive'
 
   " fzf search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
