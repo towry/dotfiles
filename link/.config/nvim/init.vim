@@ -49,6 +49,7 @@ function! NVimrcLoadPlugins()
 
   " fzf search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
 
 
   " === NERDTree
