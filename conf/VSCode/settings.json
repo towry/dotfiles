@@ -74,28 +74,28 @@
     "workbench.editor.openPositioning": "right",
     // "swiftlint.enable": true,
     // // vim settings
-    // "vim.leader": "\\",
-    // "vim.startInInsertMode": true,
-    // "vim.statusBarColorControl": true,
-    // "vim.enableNeovim": true,
-    // "vim.disableAnnoyingNeovimMessage": true,
-    // "vim.timeout": 300,
-    // "vim.insertModeKeyBindings": [
-    //     {
-    //         "before": [",", ","],
-    //         "after": ["<Esc>"]
-    //     }
-    // ],
-    // "vim.statusBarColors" : {
-    //     "normal": "#005f5f",
-    //     "insert": "#14884C"
-    // },
-    "workbench.colorCustomizations": {
-        "statusBar.background": "#c71568",
-        "statusBar.noFolderBackground": "#0a6996",
-        "statusBar.debuggingBackground": "#0aa07b"
+    "vim.leader": "\\",
+    "vim.startInInsertMode": true,
+    "vim.statusBarColorControl": true,
+    "vim.enableNeovim": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.timeout": 300,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [",", ","],
+            "after": ["<Esc>"]
+        }
+    ],
+    "vim.statusBarColors" : {
+        "normal": "#005f5f",
+        "insert": "#14884C"
     },
-    // "vim.useCtrlKeys": true,
+    "vim.useCtrlKeys": false,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#14884C",
+        "statusBar.noFolderBackground": "#14884C",
+        "statusBar.debuggingBackground": "#14884C"
+    },
     "extensions.ignoreRecommendations": true,
     "workbench.colorTheme": "Gruvbox Dark (Soft)",
     "editor.trimAutoWhitespace": true,
