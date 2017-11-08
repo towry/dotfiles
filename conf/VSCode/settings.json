@@ -92,9 +92,9 @@
     },
     "vim.useCtrlKeys": false,
     "workbench.colorCustomizations": {
-        "statusBar.background": "#14884C",
-        "statusBar.noFolderBackground": "#14884C",
-        "statusBar.debuggingBackground": "#14884C"
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
     },
     "extensions.ignoreRecommendations": true,
     "workbench.colorTheme": "Gruvbox Dark (Soft)",
@@ -113,5 +113,6 @@
         "**/.git/subtree-cache/**": true,
         "**/node_modules/**": true,
         "**/.fscache/**": true
-    }
+    },
+    "workbench.editor.tabCloseButton": "right"
 }

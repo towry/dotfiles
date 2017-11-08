@@ -9,3 +9,5 @@
 .config/nvim
 .inputrc
 .zshrc
+.chunkwmrc
+.khdrc

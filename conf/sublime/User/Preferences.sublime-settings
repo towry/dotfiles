@@ -30,7 +30,7 @@
 	"caret_extra_width": 2,
 	"caret_style": "solid",
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).tmTheme",
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Soft).tmTheme",
 	"default_line_ending": "unix",
 	"drag_text": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -63,6 +63,7 @@
 		"bower_components/",
 		"dist/"
 	],
+	"open_files_in_new_window": true,
 	"piatto_folder_icons": false,
 	"rulers":
 	[
@@ -77,9 +78,9 @@
 	"show_tab_close_buttons": true,
 	"tab_size": 2,
 	"theme": "Default.sublime-theme",
-	"translate_tabs_to_spaces": false,
+	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
-	"vintage_start_in_command_mode": true,
+	"vintage_start_in_command_mode": false,
 	"vintageous_enable_cmdline_mode": false,
 	"word_wrap": false,
 	"wrap_width": 80

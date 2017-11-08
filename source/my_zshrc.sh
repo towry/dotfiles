@@ -18,6 +18,7 @@ alias g="git"
 if type nvim > /dev/null; then
 	alias vi="nvim"
 fi
+alias typora="open -a typora"
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
