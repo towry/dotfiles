@@ -33,7 +33,7 @@ chunkc set global_desktop_offset_gap     10
 
 # chunkc set 1_desktop_offset_top          190
 # chunkc set 1_desktop_offset_bottom       190
-chunkc set 1_desktop_offset_left           20
+chunkc set 1_desktop_offset_left           50
 # chunkc set 1_desktop_offset_right        190
 # chunkc set 1_desktop_offset_gap          15
 
@@ -54,7 +54,7 @@ chunkc set window_focus_cycle            none
 chunkc set mouse_follows_focus           1
 chunkc set window_float_next             1
 chunkc set window_float_center           0
-chunkc set window_region_locked          1
+chunkc set window_region_locked          0
 
 #
 # NOTE: shell commands require escaped quotes
