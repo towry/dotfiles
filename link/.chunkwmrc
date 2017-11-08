@@ -18,21 +18,22 @@ chunkc core::hotload 1
 # NOTE: the following are config variables for the chunkwm-tiling plugin.
 #
 
+# chunkc set global_desktop_mode           bsp
 chunkc set global_desktop_mode           bsp
 # chunkc set 2_desktop_mode                monocle
 # chunkc set 5_desktop_mode                float
 
 # chunkc set 1_desktop_tree                ~/.chunkwm_layouts/dev_1
 
-chunkc set global_desktop_offset_top     2
-chunkc set global_desktop_offset_bottom  2
-chunkc set global_desktop_offset_left    2
-chunkc set global_desktop_offset_right   2
-chunkc set global_desktop_offset_gap     1
+chunkc set global_desktop_offset_top     10
+chunkc set global_desktop_offset_bottom  40
+chunkc set global_desktop_offset_left    0
+chunkc set global_desktop_offset_right   0
+chunkc set global_desktop_offset_gap     10
 
 # chunkc set 1_desktop_offset_top          190
 # chunkc set 1_desktop_offset_bottom       190
-chunkc set 1_desktop_offset_left           50
+chunkc set 1_desktop_offset_left           20
 # chunkc set 1_desktop_offset_right        190
 # chunkc set 1_desktop_offset_gap          15
 
@@ -41,7 +42,7 @@ chunkc set 1_desktop_offset_left           50
 # chunkc set 3_desktop_offset_left         190
 # chunkc set 3_desktop_offset_right        190
 
-chunkc set desktop_padding_step_size     5.0
+chunkc set desktop_padding_step_size     10.0
 chunkc set desktop_gap_step_size         5.0
 
 chunkc set bsp_spawn_left                1
@@ -49,10 +50,10 @@ chunkc set bsp_optimal_ratio             1.618
 chunkc set bsp_split_mode                optimal
 chunkc set bsp_split_ratio               0.5
 
-chunkc set window_focus_cycle            monitor
+chunkc set window_focus_cycle            none
 chunkc set mouse_follows_focus           1
-chunkc set window_float_next             0
-chunkc set window_float_center           1
+chunkc set window_float_next             1
+chunkc set window_float_center           0
 chunkc set window_region_locked          1
 
 #
@@ -81,9 +82,9 @@ chunkc set window_use_cgs_move           0
 # NOTE: the following are config variables for the chunkwm-border plugin.
 #
 
-chunkc set focused_border_color          0xff775759
+chunkc set focused_border_color          0xffffd060
 chunkc set focused_border_width          8
-chunkc set focused_border_radius         5
+chunkc set focused_border_radius         8
 chunkc set focused_border_skip_floating  0
 
 #
