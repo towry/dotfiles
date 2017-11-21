@@ -27,8 +27,10 @@ function! NVimrcLoadPlugins()
   " list, select and switch between buffers
   Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
-  Plug 'ap/vim-buftabline'
-  let g:buftabline_numbers = 1
+  if !exists('g:gui_oni')
+    Plug 'ap/vim-buftabline'
+    let g:buftabline_numbers = 1
+  end
 
   " Plug 'vim-scripts/bufkill.vim'
   Plug 'qpkorr/vim-bufkill' " allows you to kill buffer but keep split layout.
@@ -282,6 +284,9 @@ function! NVimrcLoadSettings()
     set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
     " set cursorline
   end
+  if exists('g:gui_oni')
+    set laststatus=0
+  end
   " set cursorcolumn
   " set cmdheight=2
 
@@ -290,7 +295,7 @@ function! NVimrcLoadSettings()
   set wildmenu
   set wildignore=*.dll,*.o,*.pyc,*.bak,*.exe,*.jpg,*.jpeg,*.png,*.gif
   set wildmode=list:full
-  set scrolloff=3
+  set scrolloff=2
   " set autochdir
 
   if $DISABLE_UNNAMED_CLIP != '1'
