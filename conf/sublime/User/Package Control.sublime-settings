@@ -14,7 +14,6 @@
 		"EditorConfig",
 		"ES6-Toolkit",
 		"ExtendedTabSwitcher",
-		"Focus File on Sidebar",
 		"Git",
 		"GitGutter",
 		"gruvbox",
@@ -26,7 +25,6 @@
 		"nRepeat",
 		"Objective-C Autocompletion",
 		"Package Control",
-		"PackageResourceViewer",
 		"Pretty JSON",
 		"Sass",
 		"SublimeLinter",
@@ -34,6 +32,7 @@
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
 		"Swift",
+		"SyncedSideBar",
 		"TOML",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight"

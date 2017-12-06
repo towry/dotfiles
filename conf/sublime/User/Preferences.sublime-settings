@@ -76,6 +76,7 @@
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
 	"scroll_speed": 0.9,
+	"shell_environment": "/bin/zsh",
 	"show_definitions": false,
 	"show_errors_inline": false,
 	"show_full_path": true,
@@ -88,6 +89,5 @@
 	"vintage_start_in_command_mode": false,
 	"vintageous_enable_cmdline_mode": false,
 	"word_wrap": false,
-	"wrap_width": 80,
-	"shell_environment": "/bin/zsh"
+	"wrap_width": 80
 }

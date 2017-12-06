@@ -1,6 +1,6 @@
 {
-  "default_root": "project_folder",
-  // "default_root": "current",
+  // "default_root": "project_folder",
+  "default_root": "current",
   "ignore_case": true,
   "auto_refresh_sidebar": true,
   "completion_type": "nix",
