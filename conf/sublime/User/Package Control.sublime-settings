@@ -14,6 +14,7 @@
 		"EditorConfig",
 		"ES6-Toolkit",
 		"ExtendedTabSwitcher",
+		"Focus File on Sidebar",
 		"Git",
 		"GitGutter",
 		"gruvbox",
@@ -34,7 +35,6 @@
 		"SublimeLinter-pyflakes",
 		"Swift",
 		"TOML",
-		"TypeScript",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight"
 	]

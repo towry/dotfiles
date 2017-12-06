@@ -35,8 +35,7 @@
 	"vsicons.projectDetection.autoReload": true,
 	"vsicons.dontShowNewVersionMessage": true,
     "files.associations": {
-        "*.swift.gyb": "swift",
-        "*.wxss": "css"
+        "*.tpl": "html"
     },
     "workbench.activityBar.visible": true,
     "typescript.check.tscVersion": false,
@@ -70,15 +69,15 @@
     "workbench.editor.enablePreview": false,
     "window.nativeTabs": true,
     "explorer.openEditors.visible": 0,
-    "explorer.openEditors.dynamicHeight": true,
+    "explorer.openEditors.dynamicHeight": false,
     "workbench.editor.openPositioning": "right",
     // "swiftlint.enable": true,
     // // vim settings
     "vim.leader": "\\",
-    "vim.startInInsertMode": true,
+    "vim.startInInsertMode": false,
     "vim.statusBarColorControl": true,
     "vim.enableNeovim": true,
-    "vim.disableAnnoyingNeovimMessage": true,
+    // "vim.disableAnnoyingNeovimMessage": true,
     "vim.timeout": 300,
     "vim.insertModeKeyBindings": [
         {
@@ -104,6 +103,13 @@
         "editor.wordWrap": "wordWrapColumn",
         "editor.quickSuggestions": false
     },
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "[go]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
     // "vetur.validation.template": false,
     // "vetur.validation.style": false,
     "workbench.startupEditor": "none",
@@ -114,5 +120,12 @@
         "**/node_modules/**": true,
         "**/.fscache/**": true
     },
-    "workbench.editor.tabCloseButton": "right"
+    "workbench.editor.tabCloseButton": "right",
+    "rust.rustup": {
+        "toolchain": "stable-x86_64-apple-darwin"
+    },
+    "rust.mode": "rls",
+    "window.zoomLevel": 0,
+    "html.autoClosingTags": false,
+    "bookmarks.treeview.visible": false
 }

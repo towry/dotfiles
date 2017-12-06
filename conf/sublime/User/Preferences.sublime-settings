@@ -1,4 +1,7 @@
 {
+	"animation_enabled": false,
+	"auto_complete_cycle": true,
+	"auto_complete_delay": 300,
 	"binary_file_patterns":
 	[
 		"*.exe",
@@ -50,6 +53,7 @@
 	"font_size": 14,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
+	"hot_exit": false,
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
@@ -79,9 +83,11 @@
 	"tab_size": 2,
 	"theme": "Default.sublime-theme",
 	"translate_tabs_to_spaces": true,
+	"tree_animation_enabled": false,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": false,
 	"vintageous_enable_cmdline_mode": false,
 	"word_wrap": false,
-	"wrap_width": 80
+	"wrap_width": 80,
+	"shell_environment": "/bin/zsh"
 }
