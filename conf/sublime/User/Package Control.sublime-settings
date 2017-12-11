@@ -15,6 +15,7 @@
 		"ES6-Toolkit",
 		"ExtendedTabSwitcher",
 		"Git",
+		"Git blame",
 		"GitGutter",
 		"gruvbox",
 		"HTML-CSS-JS Prettify",
@@ -32,7 +33,6 @@
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
 		"Swift",
-		"SyncedSideBar",
 		"TOML",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight"

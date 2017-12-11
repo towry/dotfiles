@@ -1,7 +1,7 @@
 {
 	"animation_enabled": false,
 	"auto_complete_cycle": true,
-	"auto_complete_delay": 300,
+	"auto_complete_delay": 80,
 	"binary_file_patterns":
 	[
 		"*.exe",
@@ -21,7 +21,7 @@
 		"*.out",
 		"*.mp4",
 		"*.mp3",
-		"node_modules/",
+		"node_modules/*",
 		"dist/*/*.*",
 		"build/",
 		"tmp/",
@@ -78,7 +78,8 @@
 	"scroll_speed": 0.9,
 	"shell_environment": "/bin/zsh",
 	"show_definitions": false,
-	"show_errors_inline": false,
+	"show_encoding": true,
+	"show_errors_inline": true,
 	"show_full_path": true,
 	"show_tab_close_buttons": true,
 	"tab_size": 2,
