@@ -128,7 +128,7 @@
     "html.autoClosingTags": false,
     "bookmarks.treeview.visible": false,
     "sync.gist": "0adffbd78223b27f62b60532ffa20388",
-    "sync.lastUpload": "2017-12-25T08:33:32.721Z",
+    "sync.lastUpload": "2017-12-25T08:57:31.693Z",
     "sync.autoDownload": false,
     "sync.autoUpload": false,
     "sync.lastDownload": "",
@@ -142,5 +142,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "editor.formatOnPaste": true,
-    "workbench.colorTheme": "Gruvbox Dark (Medium)"
+    "workbench.colorTheme": "Gruvbox Dark (Soft)",
+    "editor.renderControlCharacters": true
 }
