@@ -66,6 +66,7 @@
         "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
         "tooltip_theme_excludes": [],
         "tooltips": true,
+        "use_current_shell_path": true,
         "warning_color": "DDB700",
         "wrap_find": true
     }

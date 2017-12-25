@@ -14,6 +14,7 @@ alias gts="gits"
 alias gac='echo "$(tput bold)$(tput setaf 3)warning: be carefull$(tput sgr0)" && git add . && git commit'
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
+alias xmerged="git branch --merged master"
 alias g="git"
 if type nvim > /dev/null; then
 	alias vi="nvim"

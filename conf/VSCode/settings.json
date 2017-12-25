@@ -96,7 +96,6 @@
         "statusBar.debuggingBackground": "#005f5f"
     },
     "extensions.ignoreRecommendations": true,
-    "workbench.colorTheme": "Gruvbox Dark (Soft)",
     "editor.trimAutoWhitespace": true,
     "editor.tabSize": 2,
     "[markdown]": {
@@ -112,7 +111,7 @@
     },
     // "vetur.validation.template": false,
     // "vetur.validation.style": false,
-    "workbench.startupEditor": "none",
+    "workbench.startupEditor": "welcomePage",
     "editor.detectIndentation": true,
     "files.watcherExclude": {
         "**/.git/objects/**": true,
@@ -127,5 +126,21 @@
     "rust.mode": "rls",
     "window.zoomLevel": 0,
     "html.autoClosingTags": false,
-    "bookmarks.treeview.visible": false
+    "bookmarks.treeview.visible": false,
+    "sync.gist": "0adffbd78223b27f62b60532ffa20388",
+    "sync.lastUpload": "2017-12-25T08:33:32.721Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "workbench.colorTheme": "Gruvbox Dark (Medium)"
 }

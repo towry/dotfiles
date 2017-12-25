@@ -11,3 +11,5 @@ node_modules/
 .atom/packages/
 source/private.sh
 conf/VSCode/*.backup
+syncLocalSettings.json
+sync.lock
