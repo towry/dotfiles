@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"All Autocomplete",
 		"Babel",
 		"Codecs33",
@@ -25,11 +24,13 @@
 		"Markdown Preview",
 		"nRepeat",
 		"Objective-C Autocompletion",
+		"Origami",
 		"Package Control",
 		"Pretty JSON",
 		"Sass",
+		"SideBarEnhancements",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
+		"SublimeLinter-eslint",
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
 		"Swift",

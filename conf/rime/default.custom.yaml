@@ -3,12 +3,13 @@ patch:
   menu/page_size: 5      #这是之前增加的候选词数量。
   schema_list:           #“输入选单”中激活的输入方案定义。
    # - schema: terra_pinyin
-    - schema: luna_pinyin
+    # - schema: luna_pinyin
     - schema: emoji
    #  - schema: luna_pinyin_fluency
    #  - schema: double_pinyin_mspy
     - schema: luna_pinyin_simp
     - schema: wubi86
+    - schema: wubi_pinyin
    #  - schema: bopomofo
    #  - schema: double_pinyin_flypy
   "switcher/hotkeys":

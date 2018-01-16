@@ -67,7 +67,7 @@
 		"bower_components/",
 		"dist/"
 	],
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": true,
 	"piatto_folder_icons": false,
 	"rulers":
 	[
@@ -82,9 +82,9 @@
 	"show_errors_inline": true,
 	"show_full_path": true,
 	"show_tab_close_buttons": true,
-	"tab_size": 2,
+	"tab_size": 4,
 	"theme": "Default.sublime-theme",
-	"translate_tabs_to_spaces": true,
+	"translate_tabs_to_spaces": false,
 	"tree_animation_enabled": false,
 	"trim_trailing_white_space_on_save": true,
 	"vintage_start_in_command_mode": false,
