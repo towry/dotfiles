@@ -83,8 +83,6 @@ load_swiftenv
 # }
 
 # source ~/.gvm/scripts/gvm
-export PYTHONPATH="/Users/towry/Projects/mtp:${PYTHONPATH}"
-
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 

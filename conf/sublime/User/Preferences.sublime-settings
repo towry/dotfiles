@@ -51,13 +51,13 @@
 	],
 	"font_face": "Monaco",
 	"font_size": 14,
+	"gruvbox_sidebar_heading_bold": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
-		"Vintage"
 	],
 	"index_exclude_patterns":
 	[

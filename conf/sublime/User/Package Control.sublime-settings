@@ -36,6 +36,7 @@
 		"Swift",
 		"TOML",
 		"TypeScript Syntax",
-		"Vue Syntax Highlight"
+		"Vue Syntax Highlight",
+		"wxapp"
 	]
 }
