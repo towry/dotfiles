@@ -58,6 +58,7 @@
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
+		"Vintage"
 	],
 	"index_exclude_patterns":
 	[
