@@ -1,0 +1,9 @@
+// SublimeLinter Settings - User
+{
+	"delay": 0.5,
+	"linters": {
+		"eslint": {
+			"env": { "PATH": "/Users/towry/.nvm/versions/node/v8.9.3/bin/" }
+		}
+	}
+}
