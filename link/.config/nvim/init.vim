@@ -48,6 +48,7 @@ function! NVimrcLoadPlugins()
   Plug 'posva/vim-vue'
   Plug 'editorconfig/editorconfig-vim'
   Plug 'blueyed/vim-diminactive'
+  Plug 'simeji/winresizer'
 
   " fzf search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
