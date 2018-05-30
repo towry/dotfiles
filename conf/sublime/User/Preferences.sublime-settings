@@ -77,7 +77,6 @@
 	"save_on_focus_lost": false,
 	"scroll_past_end": true,
 	"scroll_speed": 0.9,
-	// "shell_environment": "/bin/zsh",
 	"show_definitions": false,
 	"show_encoding": true,
 	"show_errors_inline": true,
