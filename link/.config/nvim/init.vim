@@ -16,8 +16,8 @@ function! NVimrcLoadPlugins()
 
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-commentary'
-  " Plug 'morhetz/gruvbox'
-  Plug 'fenetikm/falcon'
+  Plug 'morhetz/gruvbox'
+  " Plug 'fenetikm/falcon'
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
 
@@ -331,8 +331,8 @@ endfunction
 " Theme and colors
 function! NVimrcLoadColors()
   set background=dark
-  " colorscheme gruvbox
-  colorscheme falcon
+  colorscheme gruvbox
+  " colorscheme falcon
   set termguicolors
   if has('gui_macvim')
     set macligatures
