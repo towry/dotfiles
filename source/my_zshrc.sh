@@ -20,6 +20,8 @@ if type nvim > /dev/null; then
 	alias vi="nvim"
 fi
 alias typora="open -a typora"
+alias docker-exec="docker exec -it"
+alias docker-logs="/bin/bash ~/.dotfiles/source/docker-logs"
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
