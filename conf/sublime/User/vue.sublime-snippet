@@ -1,19 +1,30 @@
 <snippet>
 	<content><![CDATA[
-Hello, ${1:this} is a ${2:snippet}.
 <template>
 ${1}
 </template>
 
-<style lang="sass">${2}
-</style>
-
 <script>
 ${3}
+export default {
+	components: {},
+	data() {
+		return {}
+	},
+	methods: {
+	}
+}
 </script>
+
+<style lang="scss">
+@import "helpers";
+
+${2}
+</style>
+
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
 	<tabTrigger>vue-template</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<scope>source.vue</scope>
+	<scope>text.html.vue</scope>
 </snippet>

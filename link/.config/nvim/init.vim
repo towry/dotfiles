@@ -150,6 +150,9 @@ function! NVimrcAutoSettings()
 
     au BufNewFile,BufRead *.es set filetype=javascript
 
+    " Vue
+    au FileType vue syntax sync fromstart
+
     " ======================
     " terminal
     if has('nvim')
