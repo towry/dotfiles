@@ -49,6 +49,7 @@ function! NVimrcLoadPlugins()
   Plug 'editorconfig/editorconfig-vim'
   Plug 'blueyed/vim-diminactive'
   Plug 'simeji/winresizer'
+  Plug 'itchyny/lightline.vim'
 
   " fzf search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -283,11 +284,10 @@ function! NVimrcLoadSettings()
   set splitright
   set splitbelow
   set shortmess=at
-  if has('nvim')
-    set laststatus=2
-    set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
+  set laststatus=2
+  set noshowmode " because we use lightline plugin.
+    " set statusline=%t[%{strlen(&fenc)?&fenc:'none'},%{&ff}]%h%m%r%y%=%c,%l/%L\ %P"
     " set cursorline
-  end
   if exists('g:gui_oni')
     set laststatus=0
   end
@@ -342,6 +342,9 @@ function! NVimrcLoadColors()
     " set guifont=InputSansCompressed-Light:h13
     set lines=39 columns=88
     " set linespace=2
+  endif
+  if !has('gui_running')
+    set t_Co=256
   endif
 
   if has('gui_vimr')
