@@ -28,13 +28,12 @@ function! NVimrcLoadPlugins()
   " list, select and switch between buffers
   Plug 'jeetsukumaran/vim-buffergator'
   " Plug 'sandeepcr529/Buffet.vim'
-  if !exists('g:gui_oni')
-    Plug 'ap/vim-buftabline'
-    let g:buftabline_numbers = 1
-  end
+  Plug 'ap/vim-buftabline'
+  let g:buftabline_numbers = 2
+  let g:buftabline_indicators = 1
 
-  " Plug 'vim-scripts/bufkill.vim'
-  Plug 'qpkorr/vim-bufkill' " allows you to kill buffer but keep split layout.
+  Plug 'emarcotte/vim-bufkill'
+  " Plug 'qpkorr/vim-bufkill' " allows you to kill buffer but keep split layout.
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
   Plug 'mileszs/ack.vim'
   Plug 'rust-lang/rust.vim', { 'for': 'rust' }
@@ -343,6 +342,9 @@ function! NVimrcLoadColors()
     " set guifont=InputSansCompressed-Light:h13
     set lines=39 columns=88
     " set linespace=2
+  endif
+
+  if has('gui_vimr')
   endif
 endfunction
 
