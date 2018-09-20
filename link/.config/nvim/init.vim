@@ -26,11 +26,12 @@ function! NVimrcLoadPlugins()
   Plug 'airblade/vim-gitgutter'
 
   " list, select and switch between buffers
-  Plug 'jeetsukumaran/vim-buffergator'
+  " Plug 'jeetsukumaran/vim-buffergator'
+
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
-  let g:buftabline_numbers = 2
-  let g:buftabline_indicators = 1
+  let g:buftabline_numbers = 1
+  " let g:buftabline_indicators = 1
 
   Plug 'emarcotte/vim-bufkill'
   " Plug 'qpkorr/vim-bufkill' " allows you to kill buffer but keep split layout.
@@ -38,18 +39,20 @@ function! NVimrcLoadPlugins()
   Plug 'mileszs/ack.vim'
   Plug 'rust-lang/rust.vim', { 'for': 'rust' }
   " Plug 'tpope/vim-vinegar'
-  Plug 'jeetsukumaran/vim-filebeagle'
+  Plug 'jeetsukumaran/vim-filebeagle' " file system explorer
   " Plug 'vim-scripts/SearchComplete'
   Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
-  Plug 'milkypostman/vim-togglelist'
+
+  Plug 'milkypostman/vim-togglelist' " toggle the Location List and the Quickfix List
+
   Plug 'bronson/vim-trailing-whitespace'
-  Plug 'HerringtonDarkholme/yats.vim'
+  " Plug 'HerringtonDarkholme/yats.vim' " typescript
   Plug 'posva/vim-vue'
   Plug 'editorconfig/editorconfig-vim'
-  Plug 'blueyed/vim-diminactive'
-  Plug 'simeji/winresizer'
-  Plug 'itchyny/lightline.vim'
+  Plug 'blueyed/vim-diminactive' " dim color for inactive split
+  Plug 'simeji/winresizer' " resize split
+  Plug 'itchyny/lightline.vim' " status line
 
   " fzf search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
