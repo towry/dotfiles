@@ -20,6 +20,7 @@ function! NVimrcLoadPlugins()
   " Plug 'fenetikm/falcon'
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+  Plug 'vim-scripts/confirm-quit'
 
   let g:gitgutter_realtime = 0
   let g:gitgutter_eager = 0
