@@ -60,7 +60,9 @@ function! NVimrcLoadPlugins()
 
   " fzf search
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
+  Plug 'junegunn/fzf.vim'
+  " let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
+  let $FZF_DEFAULT_COMMAND = 'fd --type f'
 
 
   " === NERDTree
@@ -253,7 +255,7 @@ function! NVimrcLoadSettings()
   set encoding=utf-8 " universal text encoding, compatible with ascii
   set noequalalways
   set list
-  set listchars=tab:\ \ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
+  set listchars=tab:→\ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
 
   set showbreak=↪\
   set fillchars=diff:⣿,vert:│
