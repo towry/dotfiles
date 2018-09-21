@@ -31,7 +31,7 @@ function! NVimrcLoadPlugins()
   " Plug 'sandeepcr529/Buffet.vim'
   Plug 'ap/vim-buftabline'
   let g:buftabline_numbers = 1
-  " let g:buftabline_indicators = 1
+  let g:buftabline_indicators = 1
 
   Plug 'emarcotte/vim-bufkill'
   " Plug 'qpkorr/vim-bufkill' " allows you to kill buffer but keep split layout.
