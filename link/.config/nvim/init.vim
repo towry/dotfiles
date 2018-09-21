@@ -85,17 +85,16 @@ function! NVimrcLoadPlugins()
   " === Neomake
   Plug 'neomake/neomake'
   let g:neomake_verbose = 1
+  let g:neomake_vue_enabled_makers = ['eslint']
   let g:neomake_javascript_enabled_makers = ['eslint']
   let g:neomake_python_enabled_makers = ['flake8']
   let g:neomake_rust_enabled_makers = []
 
   " load local eslint in the project root
-  let s:eslint_path = system('which eslint')
-  let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
   let g:neomake_html_enabled_makers = []
   let g:neomake_logfile = '/tmp/neomake.log'
 
-  " Plug 'benjie/local-npm-bin.vim', { 'for': 'javascript' }
+  Plug 'ngvim/local-npm-bin.vim'
 
   " === Vim-fugitive
   " nnoremap <leader>gs :Gstatus<cr>
@@ -107,7 +106,7 @@ function! NVimrcLoadPlugins()
   " vnoremap <leader>dp :diffput<cr>:diffupdate<cr>
   " nnoremap <leader>dg :diffget<cr>:diffupdate<cr>
   " vnoremap <leader>dg :diffget<cr>:diffupdate<cr>
-  " Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-fugitive'
 
   " Other
   let g:ackprg = 'ag --nogroup --nocolor --column'
