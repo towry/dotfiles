@@ -46,7 +46,7 @@ function! NVimrcLoadPlugins()
 
   Plug 'milkypostman/vim-togglelist' " toggle the Location List and the Quickfix List
 
-  Plug 'bronson/vim-trailing-whitespace'
+  " Plug 'bronson/vim-trailing-whitespace' " cause trailing whitespace hilighted.
   " Plug 'HerringtonDarkholme/yats.vim' " typescript
   Plug 'posva/vim-vue'
   Plug 'editorconfig/editorconfig-vim'
