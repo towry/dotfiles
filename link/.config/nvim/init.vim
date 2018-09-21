@@ -49,7 +49,11 @@ function! NVimrcLoadPlugins()
   " Plug 'bronson/vim-trailing-whitespace' " cause trailing whitespace hilighted.
   " Plug 'HerringtonDarkholme/yats.vim' " typescript
   Plug 'posva/vim-vue'
+
   Plug 'editorconfig/editorconfig-vim'
+  " https://github.com/editorconfig/editorconfig-core-c/blob/master/INSTALL.m://github.com/editorconfig/editorconfig-core-c/blob/master/INSTALL.md"
+  let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+
   Plug 'blueyed/vim-diminactive' " dim color for inactive split
   Plug 'simeji/winresizer' " resize split
   Plug 'itchyny/lightline.vim' " status line
@@ -249,7 +253,8 @@ function! NVimrcLoadSettings()
   set encoding=utf-8 " universal text encoding, compatible with ascii
   set noequalalways
   set list
-  set listchars=tab:▸\ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
+  set listchars=tab:\ \ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
+
   set showbreak=↪\
   set fillchars=diff:⣿,vert:│
   set showcmd " display incomplete commands
