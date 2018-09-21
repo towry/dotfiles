@@ -20,7 +20,6 @@ function! NVimrcLoadPlugins()
   " Plug 'fenetikm/falcon'
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
   " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
-  Plug 'vim-scripts/confirm-quit'
 
   let g:gitgutter_realtime = 0
   let g:gitgutter_eager = 0
@@ -84,16 +83,19 @@ function! NVimrcLoadPlugins()
   "   \ }
 
   " === Neomake
-  Plug 'benekastah/neomake'
+  Plug 'neomake/neomake'
   let g:neomake_verbose = 1
   let g:neomake_javascript_enabled_makers = ['eslint']
   let g:neomake_python_enabled_makers = ['flake8']
   let g:neomake_rust_enabled_makers = []
 
   " load local eslint in the project root
-  " let s:eslint_path = system('which eslint')
-  " let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
+  let s:eslint_path = system('which eslint')
+  let g:neomake_javascript_eslint_exe = substitute(s:eslint_path, '^\n*\s*\(.\{-}\)\n*\s*$', '\1', '')
   let g:neomake_html_enabled_makers = []
+  let g:neomake_logfile = '/tmp/neomake.log'
+
+  " Plug 'benjie/local-npm-bin.vim', { 'for': 'javascript' }
 
   " === Vim-fugitive
   " nnoremap <leader>gs :Gstatus<cr>
