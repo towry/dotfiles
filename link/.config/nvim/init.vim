@@ -255,7 +255,7 @@ function! NVimrcLoadSettings()
   set encoding=utf-8 " universal text encoding, compatible with ascii
   set noequalalways
   set list
-  set listchars=tab:→\ ,trail:•,extends:❯,precedes:❮ " ,eol:¬
+  set listchars=tab:\ \ ,space:.,trail:•,extends:❯,precedes:❮ " ,eol:¬
 
   set showbreak=↪\
   set fillchars=diff:⣿,vert:│
@@ -280,7 +280,7 @@ function! NVimrcLoadSettings()
   set showmatch " briefly jump to the matching bracket on insert
   set matchtime=2 " time in decisecons to jump back from matching bracket
   " set textwidth=80 " number of character allowed in a line
-  set nowrap " automatically wrap text when 'textwidth' is reached
+  set wrap " automatically wrap text when 'textwidth' is reached
   set foldmethod=indent " by default, fold using indentation
   set nofoldenable " don't fold by default
   set foldlevel=0 " if fold everything if 'foldenable' is set
