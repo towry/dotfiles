@@ -350,10 +350,8 @@ function! NVimrcLoadColors()
   set termguicolors
   if has('gui_macvim')
     set macligatures
-    set guifont=Monaco:h14
-    " set guifont=InputSansCompressed-Light:h13
+    set guifont=Inconsolata:h16
     set lines=39 columns=88
-    " set linespace=2
   endif
   if !has('gui_running')
     set t_Co=256
