@@ -63,6 +63,8 @@ function! NVimrcLoadPlugins()
   Plug 'junegunn/fzf.vim'
   " let $FZF_DEFAULT_COMMAND = 'ag -l -g ""'
   let $FZF_DEFAULT_COMMAND = 'fd --type f'
+  " Jump to the existing window if possible
+  let g:fzf_buffers_jump = 1
 
 
   " === NERDTree
@@ -216,6 +218,7 @@ function! NVimrcLoadMappings()
   vnoremap // y/<C-R>"<CR>
   " fzf search
   nnoremap ;p :FZF<cr>
+  nnoremap ;pb :Buffers<cr>
 
   " move text up/down
   " nnoremap <silent> <c-j> :m .+1<cr>==
@@ -350,7 +353,7 @@ function! NVimrcLoadColors()
   set termguicolors
   if has('gui_macvim')
     set macligatures
-    set guifont=Inconsolata:h16
+    set guifont=Inconsolata:h17
     set lines=39 columns=88
   endif
   if !has('gui_running')
