@@ -58,6 +58,7 @@
 	"ignore_vcs_packages": true,
 	"ignored_packages":
 	[
+		"Vintage"
 	],
 	"index_exclude_patterns":
 	[
@@ -67,7 +68,7 @@
 		"bower_components/",
 		"dist/"
 	],
-	"open_files_in_new_window": true,
+	"open_files_in_new_window": false,
 	"piatto_folder_icons": false,
 	"rulers":
 	[
