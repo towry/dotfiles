@@ -29,7 +29,7 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 DEF_NODE_VER="$(< ~/.nvm/alias/default)"
 DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
 
-export GOPATH=/Users/towry/workspace/goenv
+export GOPATH=$HOME/workspace/goenv
 
 export PATH="/usr/local/opt/openssl/bin\
 :/Library/Frameworks/Python.framework/Versions/3.4/bin\
@@ -50,13 +50,13 @@ export PATH="/usr/local/opt/openssl/bin\
 export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 
 # NVM
-export NVM_DIR="/Users/towry/.nvm"
+export NVM_DIR="$HOME/.nvm"
 loadnvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 }
 
 # >>> Sources
-# [[ -s "/Users/towry/.gvm/scripts/gvm" ]] && source "/Users/towry/.gvm/scripts/gvm"
+# [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
 
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
@@ -81,7 +81,7 @@ load_swiftenv
 # eval "$(docker-machine env default)"
 
 # loadrsvm() {
-# 	[[ -s /Users/towry/.rsvm/rsvm.sh ]] && . /Users/towry/.rsvm/rsvm.sh # This loads RSVM
+# 	[[ -s $HOME/.rsvm/rsvm.sh ]] && . $HOME/.rsvm/rsvm.sh # This loads RSVM
 # }
 
 # source ~/.gvm/scripts/gvm
