@@ -9,3 +9,5 @@ if [ -z "$ZSH" ]; then
 
 	source ~/.dotfiles/source/my_zshrc.sh
 fi
+
+export PATH="$HOME/.cargo/bin:$PATH"
