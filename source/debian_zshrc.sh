@@ -1,0 +1,2 @@
+
+alias subl=subl.exe
