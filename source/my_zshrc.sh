@@ -62,16 +62,10 @@ loadnvm() {
 # export PATH="/usr/local/heroku/bin:$PATH"
 
 if [[ -d $HOME/.pyenv ]];then
+	export PATH="$HOME/.pyenv/bin:$PATH"
 	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
 fi
-
-load_swiftenv() {
-	if which swiftenv > /dev/null;then
-		eval "$(swiftenv init -)";
-	fi
-}
-load_swiftenv
 
 # >>> Exports
 # PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
@@ -95,4 +89,13 @@ export LANG=en_US.UTF-8
 # >>> source
 source ~/.dotfiles/source/shutils
 source ~/.dotfiles/vendor/z/z.sh
+
+# Platform specific source
+if [[ $(uname -s) == Linux ]]
+then
+	source ~/.dotfiles/source/debian_zshrc.sh
+else
+	source ~/.dotfiles/source/osx_zshrc.sh
+fi
+
 # <<<
