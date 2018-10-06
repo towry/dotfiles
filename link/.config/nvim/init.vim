@@ -316,6 +316,7 @@ function! NVimrcLoadSettings()
   set wildmode=list:full
   set scrolloff=2
   " set autochdir
+  set t_ut=
 
   if $DISABLE_UNNAMED_CLIP != '1'
     set clipboard+=unnamedplus
