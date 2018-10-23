@@ -68,7 +68,7 @@
 		"bower_components/",
 		"dist/"
 	],
-	"open_files_in_new_window": false,
+	"open_files_in_new_window": true,
 	"piatto_folder_icons": false,
 	"rulers":
 	[
