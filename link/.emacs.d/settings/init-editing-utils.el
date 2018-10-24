@@ -334,4 +334,10 @@ With arg N, insert N newlines."
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'character)
 
+
+;; editorconfig
+(require-package 'editorconfig)
+(add-hook 'prog-mode-hook
+  (editorconfig-mode 1))
+
 (provide 'init-editing-utils)

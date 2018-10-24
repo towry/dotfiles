@@ -1,8 +1,8 @@
 (maybe-require-package 'json-mode)
 (maybe-require-package 'js2-mode)
-(maybe-require-package 'coffee-mode)
 (maybe-require-package 'typescript-mode)
 (maybe-require-package 'prettier-js)
+(maybe-require-package 'vue-mode)
 
 (defcustom preferred-javascript-mode
   (first (remove-if-not #'fboundp '(js2-mode js-mode)))
@@ -56,17 +56,6 @@
     (define-key js2-mode-map (kbd "M-.") nil)
     (add-hook 'js2-mode-hook
               (lambda () (add-hook 'xref-backend-functions #'xref-js2-xref-backend nil t)))))
-
-
-
-;;; Coffeescript
-
-(after-load 'coffee-mode
-  (setq coffee-js-mode preferred-javascript-mode
-        coffee-tab-width preferred-javascript-indent-level))
-
-(when (fboundp 'coffee-mode)
-  (add-to-list 'auto-mode-alist '("\\.coffee\\.erb\\'" . coffee-mode)))
 
 ;; ---------------------------------------------------------------------------
 ;; Run and interact with an inferior JS via js-comint.el
