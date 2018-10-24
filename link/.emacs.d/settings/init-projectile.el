@@ -7,7 +7,8 @@
   (after-load 'projectile
     (define-key projectile-mode-map (kbd "C-c C-p") 'projectile-command-map))
 
-  (maybe-require-package 'ibuffer-projectile))
+  (maybe-require-package 'ibuffer-projectile)
+  (maybe-require-package 'helm-projectile))
 
 
 (provide 'init-projectile)
