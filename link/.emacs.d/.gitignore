@@ -31,3 +31,4 @@ site-lisp/package/
 /~init.el
 .smex-items
 *.lock
+/games/
