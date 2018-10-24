@@ -30,3 +30,4 @@ site-lisp/package/
 /*.el
 /~init.el
 .smex-items
+*.lock

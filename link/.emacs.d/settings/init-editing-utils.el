@@ -27,8 +27,12 @@
  scroll-preserve-screen-position 'always
  set-mark-command-repeat-pop t
  tooltip-delay 1.5
+ tab-width 4
  truncate-lines nil
  truncate-partial-width-windows nil)
+
+;; Fonts
+(set-face-attribute 'default nil :height 140)
 
 (add-hook 'after-init-hook 'global-auto-revert-mode)
 (setq global-auto-revert-non-file-buffers t
@@ -325,5 +329,9 @@ With arg N, insert N newlines."
 (after-load 'guide-key
   (diminish 'guide-key-mode))
 
+;; Highlight indent guide.
+(require-package 'highlight-indent-guides)
+(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+(setq highlight-indent-guides-method 'character)
 
 (provide 'init-editing-utils)
