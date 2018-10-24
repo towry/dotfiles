@@ -73,6 +73,8 @@
 (require 'init-ibuffer)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
+(require 'init-dired)
+(require 'init-ivy)
 (require 'init-isearch)
 (require 'init-grep) ;; fd, ag etc.
 (require 'init-flycheck)
@@ -82,6 +84,7 @@
 (require 'init-git)
 (require 'init-compile)
 (require 'init-recentf)
+(require 'init-smex)
 (require 'init-company)
 (require 'init-windows)
 (require 'init-sessions)
