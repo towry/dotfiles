@@ -104,6 +104,8 @@
 (require 'init-misc)
 (require 'init-dash)
 
+(require 'init-projectile)
+
 ;; Load stuff on demand
 (autoload 'skewer-start "setup-skewer" nil t)
 (autoload 'skewer-demo "setup-skewer" nil t)
