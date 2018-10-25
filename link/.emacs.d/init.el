@@ -105,6 +105,7 @@
 (require 'init-common-lisp)
 (require 'init-python)
 (require 'init-ruby)
+(require 'init-swift)
 
 (require 'init-misc)
 (require 'init-dash)

@@ -3,7 +3,8 @@
   (setq flycheck-display-errors-function #'flycheck-display-error-messages-unless-error-list)
 
   (when (maybe-require-package 'flycheck-color-mode-line)
-    (add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode)))
+    (add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
+  (setq flycheck-indication-mode 'right-fringe))
 
 
 (provide 'init-flycheck)

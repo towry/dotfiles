@@ -1,8 +1,15 @@
+;;; Package -- summary
+;;; Commentary:
+;;; Settings for javascript
+
+
+;;; Code:
 (maybe-require-package 'json-mode)
 (maybe-require-package 'js2-mode)
 (maybe-require-package 'typescript-mode)
 (maybe-require-package 'prettier-js)
-(maybe-require-package 'vue-mode)
+;; (maybe-require-package 'vue-mode)
+(maybe-require-package 'web-mode)
 
 (defcustom preferred-javascript-mode
   (first (remove-if-not #'fboundp '(js2-mode js-mode)))
