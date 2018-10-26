@@ -13,6 +13,7 @@
 (global-hl-line-mode 1)
 ;; Line number
 (global-display-line-numbers-mode)
+(setq-default line-spacing 3)
 
 ;; Don't defer screen updates when performing operations
 (setq redisplay-dont-pause t)

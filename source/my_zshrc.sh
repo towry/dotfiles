@@ -31,15 +31,6 @@ DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
 
 export GOPATH=$HOME/workspace/goenv
 
-export PATH="/usr/local/opt/openssl/bin\
-:/Library/Frameworks/Python.framework/Versions/3.4/bin\
-:/usr/local/go/bin\
-:/usr/local/git/bin\
-:/usr/local/sbin\
-:$GOPATH/bin\
-:$DEF_NODE_BIN_PATH\
-:$HOME/.cargo/bin:$PATH"
-
 # export PATH
 #<<<<< PATH >>>>>>
 
@@ -89,6 +80,15 @@ export LANG=en_US.UTF-8
 # >>> source
 source ~/.dotfiles/source/shutils
 source ~/.dotfiles/vendor/z/z.sh
+
+export PATH="$PATH:/usr/local/opt/openssl/bin\
+:/Library/Frameworks/Python.framework/Versions/3.4/bin\
+:/usr/local/go/bin\
+:/usr/local/git/bin\
+:/usr/local/sbin\
+:$GOPATH/bin\
+:$DEF_NODE_BIN_PATH\
+:$HOME/.cargo/bin"
 
 # Platform specific source
 if [[ $(uname -s) == Linux ]]
