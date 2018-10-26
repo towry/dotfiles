@@ -1,3 +1,6 @@
 [submodule "vendor/z"]
 	path = vendor/z
 	url = https://github.com/rupa/z.git
+[submodule "link/.emacs.d/site-lisp/esup"]
+	path = link/.emacs.d/site-lisp/esup
+	url = https://github.com/jschaf/esup.git

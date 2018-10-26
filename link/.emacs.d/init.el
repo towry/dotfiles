@@ -56,7 +56,11 @@
 
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
+;; load-paths is done.
 ;;----------------------------------------------------------------------------
+;; esup
+(autoload 'esup "esup" "Emacs Start Up Profiler." nil)
+; (require 'esup)
 (require 'init-proxy) ;; proxy for url package.
 (require 'init-benchmarking) ;; Measure startup time
 (require 'init-utils) ;; functions.

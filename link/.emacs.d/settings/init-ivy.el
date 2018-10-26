@@ -10,7 +10,8 @@
                   ivy-dynamic-exhibit-delay-ms 150
                   ivy-initial-inputs-alist
                   '((man . "^")
-                    (woman . "^")))
+                    (woman . "^"))
+                  ivy-ignore-buffers '("\\` " "\\`\\*"))
 
     ;; IDO-style directory navigation
     (define-key ivy-minibuffer-map (kbd "RET") #'ivy-alt-done)
