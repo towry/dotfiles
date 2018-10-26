@@ -3,6 +3,7 @@
 
   ;; Shorter modeline
   (setq-default projectile-mode-line-prefix " Proj")
+  (setq projectile-git-submodule-command "")
 
   (after-load 'projectile
     (define-key projectile-mode-map (kbd "C-c C-p") 'projectile-command-map))
