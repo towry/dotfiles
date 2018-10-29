@@ -7,6 +7,9 @@
 
 (add-auto-mode 'html-mode "\\.\\(jsp\\|tmpl\\)\\'")
 
+(when (maybe-require-package 'web-mode)
+  (add-to-list 'auto-mode-alist '("\\.vue\\'" . web-mode)))
+
 ;; Note: ERB is configured in init-ruby
 
 (provide 'init-html)

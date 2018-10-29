@@ -4,6 +4,11 @@
 (add-auto-mode 'tcl-mode "^Portfile\\'")
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; confirm before exit.
+(setq confirm-kill-emacs 'y-or-n-p)
+;; disable logging
+(setq-default message-log-max nil)
+
 (add-hook 'prog-mode-hook 'goto-address-prog-mode)
 (setq goto-address-mail-face 'link)
 
