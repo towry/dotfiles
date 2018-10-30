@@ -1,1 +1,1 @@
-#!/usr/bin/env zsh
+source "$HOME/.dotfiles/source/my_zshrc.sh"

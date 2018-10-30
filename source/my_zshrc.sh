@@ -25,19 +25,6 @@ alias docker-logs="/bin/bash ~/.dotfiles/source/docker-logs"
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
-#>>>>> PATH <<<<<<
-DEF_NODE_VER="$(< ~/.nvm/alias/default)"
-DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
-
-export GOPATH=$HOME/workspace/goenv
-
-# export PATH
-#<<<<< PATH >>>>>>
-
-# >>> Version managers
-# PYENV
-# Setting PATH for Python 3.4
-# The orginal version is saved in .bash_profile.pysave
 export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 
 # NVM
@@ -46,41 +33,18 @@ loadnvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 }
 
-# >>> Sources
-# [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
-### Added by the Heroku Toolbelt
-# export PATH="/usr/local/heroku/bin:$PATH"
-
-if [[ -d $HOME/.pyenv ]];then
-	export PATH="$HOME/.pyenv/bin:$PATH"
-	eval "$(pyenv init -)"
-	eval "$(pyenv virtualenv-init -)"
-fi
-
-# >>> Exports
-# PATH="/usr/local/bin/vi:$HOME/dev/.tools/depot_tools:$PATH"
-# export PATH
-# <<<
-
-# eval "$(docker-machine env default)"
-
 # loadrsvm() {
 # 	[[ -s $HOME/.rsvm/rsvm.sh ]] && . $HOME/.rsvm/rsvm.sh # This loads RSVM
 # }
 
-# source ~/.gvm/scripts/gvm
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# autojump
-# [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
+#>>>>> PATH <<<<<<
+DEF_NODE_VER="$(< ~/.nvm/alias/default)"
+DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
 
-
-# >>> source
-source ~/.dotfiles/source/shutils
-source ~/.dotfiles/vendor/z/z.sh
-
+export GOPATH=$HOME/workspace/goenv
 export PATH="$PATH:/usr/local/opt/openssl/bin\
 :/Library/Frameworks/Python.framework/Versions/3.4/bin\
 :/usr/local/go/bin\
@@ -89,7 +53,12 @@ export PATH="$PATH:/usr/local/opt/openssl/bin\
 :$GOPATH/bin\
 :$DEF_NODE_BIN_PATH\
 :$HOME/.cargo/bin"
+#>>>>> END PATH <<<<<<
 
+
+# >>> source
+source ~/.dotfiles/source/shutils
+source ~/.dotfiles/vendor/z/z.sh
 # Platform specific source
 if [[ $(uname -s) == Linux ]]
 then
