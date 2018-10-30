@@ -7,8 +7,6 @@
 
 (when (memq window-system '(mac ns x))
   (setq-default exec-path-from-shell-arguments nil)
-  (exec-path-from-shell-initialize)
-  (add-to-list 'exec-path "/usr/local/bin")
-  (setenv "PATH" (concat ".:/usr/local/bin:" (getenv "PATH"))))
+  (exec-path-from-shell-initialize))
 
 (provide 'init-exec-path)

@@ -47,6 +47,7 @@ DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
 export GOPATH=$HOME/workspace/goenv
 export PATH="$PATH:/usr/local/opt/openssl/bin\
 :/Library/Frameworks/Python.framework/Versions/3.4/bin\
+:/usr/local/bin\
 :/usr/local/go/bin\
 :/usr/local/git/bin\
 :/usr/local/sbin\
