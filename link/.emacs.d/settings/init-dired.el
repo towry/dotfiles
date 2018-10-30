@@ -29,5 +29,6 @@
         (define-key dired-mode-map (kbd "/") 'dired-narrow)))))
 
 (maybe-require-package 'dired-subtree)
+(maybe-require-package 'dired-collapse)
 
 (provide 'init-dired)
