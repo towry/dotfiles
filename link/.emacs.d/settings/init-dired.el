@@ -15,6 +15,19 @@
 
 (when (maybe-require-package 'diff-hl)
   (after-load 'dired
+    (add-hook 'dired-mode-hook
+      (lambda ()
+        (dired-hide-details-mode)))
     (add-hook 'dired-mode-hook 'diff-hl-dired-mode)))
+
+(when (maybe-require-package 'dired-narrow)
+  (after-load 'dired
+    (add-hook 'dired-mode-hook
+      (lambda ()
+        (define-key dired-mode-map (kbd "i") 'dired-subtree-insert)
+        (define-key dired-mode-map (kbd ";") 'dired-subtree-remove)
+        (define-key dired-mode-map (kbd "/") 'dired-narrow)))))
+
+(maybe-require-package 'dired-subtree)
 
 (provide 'init-dired)
