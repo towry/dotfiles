@@ -330,9 +330,9 @@ With arg N, insert N newlines."
   (diminish 'guide-key-mode))
 
 ;; Highlight indent guide.
-(require-package 'highlight-indent-guides)
-(add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
-(setq highlight-indent-guides-method 'character)
+; (require-package 'highlight-indent-guides)
+; (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
+; (setq highlight-indent-guides-method 'character)
 
 
 ;; editorconfig
