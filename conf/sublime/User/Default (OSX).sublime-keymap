@@ -27,5 +27,7 @@
       { "key": "setting.command_mode", "operand": false },
       { "key": "setting.is_widget", "operand": false }
     ]
-  }
+  },
+
+  { "keys": ["ctrl+x", "ctrl+r"], "command": "reveal_in_side_bar" },
 ]
