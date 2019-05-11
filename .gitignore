@@ -13,3 +13,4 @@ source/private.sh
 conf/VSCode/*.backup
 syncLocalSettings.json
 sync.lock
+repo/
