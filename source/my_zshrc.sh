@@ -41,31 +41,19 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 #>>>>> PATH <<<<<<
-DEF_NODE_VER="$(< ~/.nvm/alias/default)"
-DEF_NODE_BIN_PATH="$HOME/.nvm/versions/node/$DEF_NODE_VER/bin"
-
-export GOPATH=$HOME/workspace/goenv
-export PATH="$PATH:/usr/local/opt/openssl/bin\
-:/Library/Frameworks/Python.framework/Versions/3.4/bin\
-:/usr/local/bin\
-:/usr/local/go/bin\
-:/usr/local/git/bin\
-:/usr/local/sbin\
-:$GOPATH/bin\
-:$DEF_NODE_BIN_PATH\
-:$HOME/.cargo/bin"
+source ~/.dotfiles/source/zsh/path.sh
 #>>>>> END PATH <<<<<<
 
 
 # >>> source
-source ~/.dotfiles/source/shutils
+source ~/.dotfiles/source/zsh/shutils
 source ~/.dotfiles/vendor/z/z.sh
 # Platform specific source
-if [[ $(uname -s) == Linux ]]
+if type "uname" > /dev/null && [[ $(uname -s) == Linux ]]
 then
-	source ~/.dotfiles/source/debian_zshrc.sh
+	source ~/.dotfiles/source/zsh/debian_zshrc.sh
 else
-	source ~/.dotfiles/source/osx_zshrc.sh
+	source ~/.dotfiles/source/zsh/osx_zshrc.sh
 fi
 
 # <<<
