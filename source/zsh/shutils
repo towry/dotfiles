@@ -42,3 +42,16 @@ function xpr() {
   sleep 1
   git pull --rebase $a `xbn`
 }
+
+fucntion xdesc() {
+  local a=$1
+  if [ -z "$1" ]
+  then
+    a="`xbn`"
+  fi
+  git config branch.${a}.description
+}
+
+function xedit-desc() {
+  git branch --edit-description
+}
