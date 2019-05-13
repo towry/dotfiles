@@ -33,3 +33,4 @@ site-lisp/package/
 *.lock
 /games/
 /eshell
+/anaconda-mode/

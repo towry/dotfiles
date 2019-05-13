@@ -1,5 +1,9 @@
 {
 	"bootstrapped": true,
+	"channels":
+	[
+		"http://www.miaoqiyuan.cn/products/proxy.php/https://packagecontrol.io/channel_v3.json"
+	],
 	"in_process_packages":
 	[
 	],
@@ -19,6 +23,7 @@
 		"gruvbox",
 		"HTML-CSS-JS Prettify",
 		"InsertDate",
+		"JsPrettier",
 		"Licence Snippets",
 		"MarkdownPreview",
 		"Mustang Color Scheme",
