@@ -34,3 +34,4 @@ site-lisp/package/
 /games/
 /eshell
 /anaconda-mode/
+transient/

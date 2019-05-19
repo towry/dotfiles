@@ -1,9 +1,7 @@
 {
 	"bootstrapped": true,
-	"channels":
-	[
-		"http://www.miaoqiyuan.cn/products/proxy.php/https://packagecontrol.io/channel_v3.json"
-	],
+	"http_proxy": "127.0.0.1:1081",
+	"https_proxy": "127.0.0.1:1081",
 	"in_process_packages":
 	[
 	],
