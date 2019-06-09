@@ -50,7 +50,7 @@
 		".vscode"
 	],
 	"font_face": "Inconsolata",
-	"font_size": 17,
+	"font_size": 15,
 	"gruvbox_sidebar_heading_bold": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
