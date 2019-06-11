@@ -3,5 +3,6 @@
 	"delay": 0.5,
 	"linters": {
 		"eslint": {}
-	}
+	},
+	"lint_mode": "save"
 }
