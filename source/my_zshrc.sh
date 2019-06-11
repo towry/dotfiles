@@ -29,8 +29,9 @@ export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
-loadnvm() {
+nvm() {
 	[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+	nvm "$@"
 }
 
 # loadrsvm() {
