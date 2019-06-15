@@ -11,3 +11,4 @@
 .zshrc
 .chunkwmrc
 .khdrc
+.config/mpv
