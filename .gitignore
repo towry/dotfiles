@@ -7,6 +7,7 @@ workspaceStorage
 conf/VSCode/projects.json
 link/.config/*
 !link/.config/nvim
+!link/.config/mpv
 node_modules/
 .atom/packages/
 source/private.sh
