@@ -10,7 +10,7 @@
 	clone1 = clone --depth=1
 	des = describe
 	latest-tag = describe --tags
-	ignore = "!gi() { curl -L -s https://www.gitignore.io/api/$@ ;}; gi"
+	ignore = "!gi() { curl -sL https://www.gitignore.io/api/$@ ;}; gi"
 [user]
 	name = towry
 	email = tovvry@gmail.com
@@ -32,7 +32,7 @@
 	helper = store
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
