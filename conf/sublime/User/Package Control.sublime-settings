@@ -1,7 +1,5 @@
 {
 	"bootstrapped": true,
-	"http_proxy": "127.0.0.1:1081",
-	"https_proxy": "127.0.0.1:1081",
 	"in_process_packages":
 	[
 	],
@@ -29,6 +27,7 @@
 		"Origami",
 		"Package Control",
 		"Pretty JSON",
+		"Prevent Duplicate Windows",
 		"Sass",
 		"SideBarEnhancements",
 		"SublimeLinter",

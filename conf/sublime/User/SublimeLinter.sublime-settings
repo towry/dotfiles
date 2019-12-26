@@ -4,5 +4,5 @@
 	"linters": {
 		"eslint": {}
 	},
-	"lint_mode": "save"
+	"lint_mode": "manual"
 }
