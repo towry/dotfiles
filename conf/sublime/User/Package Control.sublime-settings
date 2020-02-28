@@ -17,9 +17,9 @@
 		"Git blame",
 		"GitGutter",
 		"gruvbox",
+		"Handlebars",
 		"HTML-CSS-JS Prettify",
 		"InsertDate",
-		"JsPrettier",
 		"Licence Snippets",
 		"MarkdownPreview",
 		"Mustang Color Scheme",
@@ -34,7 +34,6 @@
 		"SublimeLinter-eslint",
 		"SublimeLinter-json",
 		"SublimeLinter-pyflakes",
-		"Swift",
 		"TOML",
 		"TypeScript Syntax",
 		"Vue Syntax Highlight"
