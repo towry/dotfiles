@@ -1,0 +1,31 @@
+// 将键绑定放入此文件中以覆盖默认值
+[
+	{ "key": "cmd+f2", 		"command": "bookmarks.toggle" },
+	{ "key": "f2", 			"command": "bookmarks.jumpToNext" },
+	{
+		"key": "cmd+f3",
+		"command": "workbench.action.files.saveAll"
+	},
+	{
+		"key": "ctrl+,",
+		"command": "workbench.action.openNextRecentlyUsedEditorInGroup"
+	},
+	{
+		"key": "ctrl+,",
+		"command": "workbench.action.quickOpenSelectNext",
+		"when": "inQuickOpen"
+	},
+	{
+		"key": "ctrl+x ctrl+r",
+		"command": "workbench.files.action.showActiveFileInExplorer",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+cmd+k",
+		"command": "workbench.action.moveEditorToAboveGroup"
+	},
+	{
+		"key": "ctrl+cmd+j",
+		"command": "workbench.action.moveEditorToBelowGroup"
+	}
+]

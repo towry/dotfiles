@@ -1,0 +1,3 @@
+User/*
+!User/settings.json
+!User/keybindings.json

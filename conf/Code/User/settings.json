@@ -1,0 +1,125 @@
+// 将设置放入此文件中以覆盖默认设置
+{
+// editor config
+    "editor.fontFamily": "Monaco, Inconsolata, Menlo, 'Courier New', monospace",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "editor.insertSpaces": true,
+    "editor.rulers": [
+        80
+    ],
+    "editor.renderIndentGuides": true,
+    "editor.folding": true,
+	"editor.selectionHighlight": true,
+
+// projects
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true,
+        "**/build": true,
+        "**/dest": true,
+        "**/temp": true,
+        "**/docs/qxfe": true,
+        "**/.fscache/**": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.associations": {
+        "*.tpl": "html",
+        "*.wpy": "vue",
+        "*.wxss": "scss"
+    },
+    "workbench.activityBar.visible": true,
+    "editor.cursorStyle": "line",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "window.title": "${activeEditorLong} - ${rootName}",
+    "explorer.enableDragAndDrop": false,
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.quickSuggestionsDelay": 15,
+    "files.insertFinalNewline": true,
+    "extensions.autoUpdate": true,
+    "workbench.sideBar.location": "left",
+    "editor.lineHeight": 20,
+    "editor.roundedSelection": false,
+    "editor.find.seedSearchStringFromSelection": false,
+    "editor.cursorBlinking": "smooth",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.dragAndDrop": false,
+    "editor.accessibilitySupport": "off",
+    "workbench.editor.showTabs": true,
+    "workbench.editor.showIcons": true,
+    "workbench.editor.enablePreview": false,
+    "explorer.openEditors.visible": 0,
+    "extensions.ignoreRecommendations": true,
+    "editor.trimAutoWhitespace": true,
+    "editor.tabSize": 2,
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.quickSuggestions": false
+    },
+    "[python]": {
+        "editor.tabSize": 4
+    },
+    "[go]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.detectIndentation": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.fscache/**": true
+    },
+    "window.zoomLevel": 0,
+    "html.autoClosingTags": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.renderControlCharacters": false,
+    "editor.codeLens": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.quickOpen.closeOnFocusLost": true,
+    "explorer.autoReveal": false,
+    "files.hotExit": "off",
+    "window.openFilesInNewWindow": "on",
+    "files.autoSave": "off",
+    "editor.scrollBeyondLastLine": true,
+    "editor.mouseWheelScrollSensitivity": 0.9,
+    "editor.wordWrap": "off",
+    "search.followSymlinks": false,
+    "search.smartCase": true,
+    "workbench.fontAliasing": "auto",
+    "git.ignoreLegacyWarning": true,
+    "editor.minimap.enabled": false,
+    "files.trimFinalNewlines": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    },
+    "git.detectSubmodules": false,
+    "workbench.colorTheme": "Gruvbox Dark (Soft)",
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "workbench.editor.highlightModifiedTabs": true,
+    "window.titleBarStyle": "native",
+    "prettier.prettierPath": "./node_modules/.bin/prettier",
+    "[typescript]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
