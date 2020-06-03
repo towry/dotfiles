@@ -10,6 +10,7 @@ alias s="subl"
 alias m="mvim"
 alias v="vimr"
 alias gts="gits"
+alias code="code-insiders"
 
 alias gac='echo "$(tput bold)$(tput setaf 3)warning: be carefull$(tput sgr0)" && git add . && git commit'
 alias gtail="git rev-list --all | tail"
