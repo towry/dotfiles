@@ -67,8 +67,8 @@
 (defalias 'ri 'yari)
 
 
-
-(require-package 'goto-gem)
+;;; goto-gem not exists.
+;;; (require-package 'goto-gem)
 
 
 (require-package 'bundler)
