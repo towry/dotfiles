@@ -13,6 +13,7 @@ alias gts="gits"
 alias code="code-insiders"
 
 alias gac='echo "$(tput bold)$(tput setaf 3)warning: be carefull$(tput sgr0)" && git add . && git commit'
+alias gcz='echo "$(tput bold)$(tput setaf 3)warning: be carefull$(tput sgr0)" && git add . && git cz'
 alias gtail="git rev-list --all | tail"
 alias xmerge="git merge --no-ff"
 alias xmerged="git branch --merged master"
