@@ -27,7 +27,7 @@ alias docker-logs="/bin/bash ~/.dotfiles/source/docker-logs"
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
-export RUSTUP_DIST_SERVER="https://mirrors.ustc.edu.cn/rust-static"
+export RUSTUP_DIST_SERVER="https://mirrors.tuna.tsinghua.edu.cn/rustup"
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
