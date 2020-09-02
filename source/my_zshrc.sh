@@ -58,4 +58,5 @@ else
 	source ~/.dotfiles/source/zsh/osx_zshrc.sh
 fi
 
+[ -f ~/.dotfiles/source/private.sh ] && source ~/.dotfiles/source/private.sh
 # <<<
