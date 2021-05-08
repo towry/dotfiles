@@ -88,3 +88,5 @@ export SSH_KEY_PATH="~/.ssh/rsa_id"
 source "$HOME/.dotfiles/source/my_zshrc.sh"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$HOME/.poetry/bin:$PATH"
