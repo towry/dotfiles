@@ -38,17 +38,18 @@ function! NVimrcLoadPlugins()
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
   Plug 'mileszs/ack.vim'
   Plug 'rust-lang/rust.vim', { 'for': 'rust' }
+  Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
   " Plug 'tpope/vim-vinegar'
   Plug 'jeetsukumaran/vim-filebeagle' " file system explorer
   " Plug 'vim-scripts/SearchComplete'
-  Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
+  " Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
   " Plug 'wincent/loupe' " enhances vim's search-commands in four ways.
 
   Plug 'milkypostman/vim-togglelist' " toggle the Location List and the Quickfix List
 
   " Plug 'bronson/vim-trailing-whitespace' " cause trailing whitespace hilighted.
-  " Plug 'HerringtonDarkholme/yats.vim' " typescript
-  Plug 'posva/vim-vue'
+  Plug 'HerringtonDarkholme/yats.vim' " typescript
+  Plug 'posva/vim-vue', { 'for': 'vim' }
 
   Plug 'editorconfig/editorconfig-vim'
   " https://github.com/editorconfig/editorconfig-core-c/blob/master/INSTALL.m://github.com/editorconfig/editorconfig-core-c/blob/master/INSTALL.md"
@@ -161,7 +162,7 @@ function! NVimrcAutoSettings()
      \  | setl shiftwidth=2
      \  | setl expandtab
 
-    au BufNewFile,BufRead *.es set filetype=javascript
+    " au BufNewFile,BufRead *.es set filetype=javascript
 
     " Vue
     au FileType vue syntax sync fromstart
@@ -239,6 +240,7 @@ function! NVimrcLoadMappings()
 
   " Neovim
   if has('nvim')
+    " see https://github.com/neovim/neovim/issues/7648
     tnoremap <Esc> <C-\><C-n>
   endif
 
@@ -350,7 +352,6 @@ endfunction
 function! NVimrcLoadColors()
   set background=dark
   colorscheme gruvbox
-  " colorscheme falcon
   set termguicolors
   if has('gui_macvim')
     set macligatures
