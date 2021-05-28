@@ -97,7 +97,6 @@ function! NVimrcLoadPlugins()
   " === Neomake
   Plug 'neomake/neomake'
   let g:neomake_verbose = 1
-  let b:neomake_javascript_eslint_exe = GetNpmBin('eslint')
   let g:neomake_vue_enabled_makers = ['eslint']
   let g:neomake_javascript_enabled_makers = ['eslint']
   let g:neomake_python_enabled_makers = ['flake8']
@@ -107,7 +106,6 @@ function! NVimrcLoadPlugins()
   let g:neomake_html_enabled_makers = []
   let g:neomake_logfile = '/tmp/neomake.log'
 
-  Plug 'benjie/local-npm-bin.vim'
 
   " === Vim-fugitive
   " nnoremap <leader>gs :Gstatus<cr>
