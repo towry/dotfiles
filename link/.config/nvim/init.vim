@@ -19,7 +19,8 @@ function! NVimrcLoadPlugins()
   Plug 'morhetz/gruvbox'
   " Plug 'fenetikm/falcon'
   Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
-  " Plug 'mxw/vim-jsx', { 'for': 'jsx' }
+  let g:javascript_plugin_jsdoc = 1
+  Plug 'maxmellon/vim-jsx-pretty'
 
   let g:gitgutter_realtime = 0
   let g:gitgutter_eager = 0
@@ -28,18 +29,20 @@ function! NVimrcLoadPlugins()
   " list, select and switch between buffers
   " Plug 'jeetsukumaran/vim-buffergator'
 
-  " Plug 'sandeepcr529/Buffet.vim'
-  Plug 'ap/vim-buftabline'
-  let g:buftabline_numbers = 1
-  let g:buftabline_indicators = 1
+  " Plug 'ap/vim-buftabline'
+  " let g:buftabline_numbers = 1
+  " let g:buftabline_indicators = 1
 
-  Plug 'emarcotte/vim-bufkill'
+  Plug 'bagrat/vim-buffet'
+  let g:buffet_show_index = 1
+
   " Plug 'qpkorr/vim-bufkill' " allows you to kill buffer but keep split layout.
   Plug 'ervandew/supertab' " allows you to use <Tab> for all your insert completion needs
   Plug 'mileszs/ack.vim'
   Plug 'rust-lang/rust.vim', { 'for': 'rust' }
   Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-  " Plug 'tpope/vim-vinegar'
+  " http://vimcasts.org/blog/2013/01/oil-and-vinegar-split-windows-and-project-drawer/
+  Plug 'tpope/vim-vinegar'
   Plug 'jeetsukumaran/vim-filebeagle' " file system explorer
   " Plug 'vim-scripts/SearchComplete'
   " Plug 'toyamarinyon/vim-swift', { 'for': 'swift' }
@@ -94,6 +97,7 @@ function! NVimrcLoadPlugins()
   " === Neomake
   Plug 'neomake/neomake'
   let g:neomake_verbose = 1
+  let b:neomake_javascript_eslint_exe = GetNpmBin('eslint')
   let g:neomake_vue_enabled_makers = ['eslint']
   let g:neomake_javascript_enabled_makers = ['eslint']
   let g:neomake_python_enabled_makers = ['flake8']
@@ -103,7 +107,7 @@ function! NVimrcLoadPlugins()
   let g:neomake_html_enabled_makers = []
   let g:neomake_logfile = '/tmp/neomake.log'
 
-  Plug 'ngvim/local-npm-bin.vim'
+  Plug 'benjie/local-npm-bin.vim'
 
   " === Vim-fugitive
   " nnoremap <leader>gs :Gstatus<cr>
@@ -226,6 +230,13 @@ function! NVimrcLoadMappings()
   " nnoremap <silent> <c-k> :m .-2<cr>==
   " vnoremap <silent> <c-k> :m '<-2<cr>gv=gv
   " vnoremap <silent> <c-j> :m '>+1<cr>gv=gv
+
+  " bagrat/vim-buffet
+  " next buffer in normal mode
+  noremap <Tab> :bn<CR> 
+  " previous buffer
+  noremap <S-Tab> :bp<CR> "
+  " - vim-buffet
 
   " help
   inoremap <f1> <esc>:help

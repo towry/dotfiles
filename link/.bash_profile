@@ -10,8 +10,6 @@ if [ -z "$ZSH" ]; then
 	source ~/.dotfiles/source/my_zshrc.sh
 fi
 
-export PATH="$HOME/.cargo/bin:$PATH"
-
 # Created by mirror-config-china
 export IOJS_ORG_MIRROR=https://npm.taobao.org/mirrors/iojs
 export NODIST_IOJS_MIRROR=https://npm.taobao.org/mirrors/iojs

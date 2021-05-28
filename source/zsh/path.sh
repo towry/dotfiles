@@ -1,5 +1,4 @@
 _PATH_STR="$PATH:/usr/local/opt/openssl/bin\
-:/Library/Frameworks/Python.framework/Versions/3.4/bin\
 :/usr/local/bin\
 :/usr/local/go/bin\
 :/usr/local/git/bin\
