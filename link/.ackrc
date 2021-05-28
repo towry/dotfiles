@@ -1,5 +1,6 @@
---type-add=js=.jsx
---type-add=css=.sass,.lss,.scss
+--type-add=js:ext:jsx
+--type-add=html:ext:vue
+--type-add=css:ext:sass,less,scss
 --type-set=slim=.slim
 --ignore-dir=node_modules/
 --ignore-dir=bower_components/
